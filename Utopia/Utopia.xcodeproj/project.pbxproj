@@ -1,0 +1,2223 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E606498C1D051398005BC45B /* ProvinceTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606498B1D051398005BC45B /* ProvinceTabController.swift */; };
+		E606498E1D052ACC005BC45B /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = E606498D1D052ACC005BC45B /* Province.swift */; };
+		E607998F1D62963A00C90CED /* KingdomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E607998E1D62963A00C90CED /* KingdomController.swift */; };
+		E60799911D629A4800C90CED /* CollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60799901D629A4800C90CED /* CollectionAdapter.swift */; };
+		E60799931D629F6C00C90CED /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60799921D629F6C00C90CED /* CollectionViewCell.swift */; };
+		E60799951D629FB700C90CED /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60799941D629FB700C90CED /* CollectionViewCell.xib */; };
+		E63D85871D6CB06700581A4C /* CastableSpell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D85861D6CB06700581A4C /* CastableSpell.swift */; };
+		E63D85891D6CB09400581A4C /* SpellCellFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E63D85881D6CB09400581A4C /* SpellCellFactory.swift */; };
+		E64845421D57EE6F00C0371F /* VerdeIntelSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64845411D57EE6F00C0371F /* VerdeIntelSync.swift */; };
+		E657D25F1D470DD500710E02 /* IntelSyncController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657D25E1D470DD500710E02 /* IntelSyncController.swift */; };
+		E657D2611D4711AE00710E02 /* UpoopuIntelSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657D2601D4711AE00710E02 /* UpoopuIntelSync.swift */; };
+		E657D4201D49AF2C00710E02 /* IntelSyncType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657D41F1D49AF2C00710E02 /* IntelSyncType.swift */; };
+		E657D4221D49B48B00710E02 /* IntelSyncFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657D4211D49B48B00710E02 /* IntelSyncFactory.swift */; };
+		E657D4251D49B75000710E02 /* IosJavaScriptExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657D4241D49B75000710E02 /* IosJavaScriptExecutor.swift */; };
+		E657D4271D49B77500710E02 /* IosBase64Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E657D4261D49B77500710E02 /* IosBase64Util.swift */; };
+		E657D4291D49B91500710E02 /* upoopu_lib.js in Resources */ = {isa = PBXBuildFile; fileRef = E657D4281D49B91500710E02 /* upoopu_lib.js */; };
+		E65B675D1D261AE20061FCCB /* RefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65B675C1D261AE20061FCCB /* RefreshControl.swift */; };
+		E6625B7E1D4BC39C00EBD992 /* BuildVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6625B7D1D4BC39C00EBD992 /* BuildVersion.swift */; };
+		E6638AE81D26D41500FF5444 /* LoadingDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6638AE71D26D41500FF5444 /* LoadingDialog.xib */; };
+		E6638AEA1D26D4F300FF5444 /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AE91D26D4F300FF5444 /* LoadingDialog.swift */; };
+		E6638AEC1D275F1300FF5444 /* ProvinceNewsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AEB1D275F1300FF5444 /* ProvinceNewsController.swift */; };
+		E6638AEF1D2761F200FF5444 /* ProvinceNewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6638AEE1D2761F200FF5444 /* ProvinceNewsCell.xib */; };
+		E6638AF11D2764D800FF5444 /* ProvinceNewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AF01D2764D800FF5444 /* ProvinceNewsCell.swift */; };
+		E6638AF31D2767A400FF5444 /* ProvinceNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AF21D2767A400FF5444 /* ProvinceNews.swift */; };
+		E6638AF51D28AB3A00FF5444 /* Kingdom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AF41D28AB3A00FF5444 /* Kingdom.swift */; };
+		E6638AF71D28AD1100FF5444 /* UtopiaTagUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AF61D28AD1100FF5444 /* UtopiaTagUtil.swift */; };
+		E6638AF91D28AE4000FF5444 /* JavaUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AF81D28AE4000FF5444 /* JavaUtil.swift */; };
+		E6638AFC1D28B5B400FF5444 /* ProvinceTagCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6638AFB1D28B5B400FF5444 /* ProvinceTagCell.xib */; };
+		E6638AFE1D28B63200FF5444 /* ProvinceTagCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6638AFD1D28B63200FF5444 /* ProvinceTagCell.swift */; };
+		E670DE711D64E2A3006665EB /* KingdomProvinceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E670DE701D64E2A3006665EB /* KingdomProvinceCell.xib */; };
+		E670DE731D64E2FC006665EB /* KingdomProvinceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E670DE721D64E2FC006665EB /* KingdomProvinceCell.swift */; };
+		E6A02E181D5C10F80014F1B6 /* GenericIntelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E171D5C10F80014F1B6 /* GenericIntelController.swift */; };
+		E6A02E1A1D5C12080014F1B6 /* UpoopuIntelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E191D5C12080014F1B6 /* UpoopuIntelController.swift */; };
+		E6A02E1C1D5C182B0014F1B6 /* VerdeIntelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E1B1D5C182B0014F1B6 /* VerdeIntelController.swift */; };
+		E6A02E1E1D5C229E0014F1B6 /* UmunkIntelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E1D1D5C229E0014F1B6 /* UmunkIntelController.swift */; };
+		E6A02E201D5C22D70014F1B6 /* StingerIntelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E1F1D5C22D70014F1B6 /* StingerIntelController.swift */; };
+		E6A02E221D5C35190014F1B6 /* UmunkIntelSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E211D5C35190014F1B6 /* UmunkIntelSync.swift */; };
+		E6A02E241D5C36CF0014F1B6 /* StingerIntelSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A02E231D5C36CF0014F1B6 /* StingerIntelSync.swift */; };
+		E6A1A6671D6A0742002DF8AD /* ReadOnlyThroneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1A6661D6A0742002DF8AD /* ReadOnlyThroneViewController.swift */; };
+		E6A1A6691D6AA949002DF8AD /* OffensiveSpellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A1A6681D6AA949002DF8AD /* OffensiveSpellsController.swift */; };
+		E6A8ACDD1CFD147F0094C15F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A8ACDC1CFD147F0094C15F /* AppDelegate.swift */; };
+		E6A8ACDF1CFD147F0094C15F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A8ACDE1CFD147F0094C15F /* LoginViewController.swift */; };
+		E6A8ACE21CFD147F0094C15F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6A8ACE01CFD147F0094C15F /* Main.storyboard */; };
+		E6A8ACE41CFD147F0094C15F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E6A8ACE31CFD147F0094C15F /* Assets.xcassets */; };
+		E6A8ACF21CFD147F0094C15F /* UtopiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A8ACF11CFD147F0094C15F /* UtopiaTests.swift */; };
+		E6A8ACFD1CFD147F0094C15F /* UtopiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A8ACFC1CFD147F0094C15F /* UtopiaUITests.swift */; };
+		E6A8AD9F1CFD42C20094C15F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A8AD521CFD2AA60094C15F /* libz.tbd */; };
+		E6A8ADA01CFD42DB0094C15F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A8AD541CFD2AB00094C15F /* Security.framework */; };
+		E6AC3AAD1D122C820066A438 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC3AAC1D122C820066A438 /* Util.swift */; };
+		E6AC3AAF1D123A0F0066A438 /* DraftRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC3AAE1D123A0F0066A438 /* DraftRate.swift */; };
+		E6AC3AB11D1744D90066A438 /* UiTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC3AB01D1744D90066A438 /* UiTheme.swift */; };
+		E6AC3AB31D17476E0066A438 /* Race.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC3AB21D17476E0066A438 /* Race.swift */; };
+		E6AC3AB61D1AE2160066A438 /* Dialogs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E6AC3AB51D1AE2160066A438 /* Dialogs.storyboard */; };
+		E6AC3AB81D1B03500066A438 /* TrainUnitsDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AC3AB71D1B03500066A438 /* TrainUnitsDialog.swift */; };
+		E6BA9F5C1D6D273200284CD9 /* UtopiaUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6BA9F5B1D6D273200284CD9 /* UtopiaUtil.swift */; };
+		E6C1ED161D4C549900CA088D /* BadAccessType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6C1ED151D4C549900CA088D /* BadAccessType.swift */; };
+		E6D211EF1D24B6C500FC0E35 /* WebRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D211EE1D24B6C500FC0E35 /* WebRequest.swift */; };
+		E6D211F11D25528000FC0E35 /* AutomaticApnsTokenRegistrar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D211F01D25528000FC0E35 /* AutomaticApnsTokenRegistrar.swift */; };
+		E6D211F31D255B9200FC0E35 /* KingdomIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D211F21D255B9200FC0E35 /* KingdomIdentifier.swift */; };
+		E6D211F51D26020300FC0E35 /* WebViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D211F41D26020300FC0E35 /* WebViewDelegate.swift */; };
+		E6D801731D1CCF0A00EF2223 /* TrainArmyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801721D1CCF0A00EF2223 /* TrainArmyData.swift */; };
+		E6D801751D1F14DE00EF2223 /* MilitaryWagesDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801741D1F14DE00EF2223 /* MilitaryWagesDialog.swift */; };
+		E6D801771D1F985700EF2223 /* DraftRateDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801761D1F985700EF2223 /* DraftRateDialog.swift */; };
+		E6D8017A1D1F9BE200EF2223 /* PickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801791D1F9BE200EF2223 /* PickerViewAdapter.swift */; };
+		E6D8017C1D1F9D9200EF2223 /* DefaultPickerViewItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D8017B1D1F9D9200EF2223 /* DefaultPickerViewItem.xib */; };
+		E6D8017E1D1F9E1400EF2223 /* DefaultPickerViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8017D1D1F9E1400EF2223 /* DefaultPickerViewItem.swift */; };
+		E6D801811D207E9500EF2223 /* SpellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D801801D207E9500EF2223 /* SpellTableViewCell.xib */; };
+		E6D801831D2080F100EF2223 /* SpellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801821D2080F100EF2223 /* SpellTableViewCell.swift */; };
+		E6D801851D20838300EF2223 /* DefensiveSpellsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801841D20838300EF2223 /* DefensiveSpellsController.swift */; };
+		E6D801871D20845600EF2223 /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801861D20845600EF2223 /* TableViewAdapter.swift */; };
+		E6D8018E1D208BCA00EF2223 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8018C1D208BCA00EF2223 /* TableViewCell.swift */; };
+		E6D8018F1D208BCA00EF2223 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D8018D1D208BCA00EF2223 /* TableViewCell.xib */; };
+		E6D801911D2099DB00EF2223 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801901D2099DB00EF2223 /* Spell.swift */; };
+		E6D801931D21FE2800EF2223 /* Building.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801921D21FE2800EF2223 /* Building.swift */; };
+		E6D8019C1D22271400EF2223 /* CastSpellDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8019B1D22271400EF2223 /* CastSpellDialog.swift */; };
+		E6D8019E1D234C6F00EF2223 /* SpellResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8019D1D234C6F00EF2223 /* SpellResult.swift */; };
+		E6D801A01D2365CE00EF2223 /* KingdomChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D8019F1D2365CE00EF2223 /* KingdomChatController.swift */; };
+		E6D801A21D23663300EF2223 /* ChatroomMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801A11D23663300EF2223 /* ChatroomMessage.swift */; };
+		E6D801A51D236A3C00EF2223 /* ChatroomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D801A41D236A3C00EF2223 /* ChatroomMessageCell.xib */; };
+		E6D801A71D236B1600EF2223 /* ChatroomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6D801A61D236B1600EF2223 /* ChatroomMessageCell.swift */; };
+		E6DDA5B61CFFE9D4009B1099 /* org in Resources */ = {isa = PBXBuildFile; fileRef = E6DDA5B51CFFE9D4009B1099 /* org */; };
+		E6DDA7691D0298EC009B1099 /* IosDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA7681D0298EC009B1099 /* IosDatabase.swift */; };
+		E6DDA76B1D02A032009B1099 /* NotificationMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA76A1D02A032009B1099 /* NotificationMaker.swift */; };
+		E6DDA76D1D02A098009B1099 /* Vibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA76C1D02A098009B1099 /* Vibrator.swift */; };
+		E6DDA7711D035305009B1099 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA7701D035305009B1099 /* Session.swift */; };
+		E6DDA7731D035547009B1099 /* ThroneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA7721D035547009B1099 /* ThroneViewController.swift */; };
+		E6DDA7751D038586009B1099 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA7741D038586009B1099 /* NavigationController.swift */; };
+		E6DDA7771D039AE1009B1099 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = E6DDA7761D039AE1009B1099 /* libsqlite3.tbd */; };
+		E6DDA7791D046852009B1099 /* IosKeyValueStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6DDA7781D046852009B1099 /* IosKeyValueStore.swift */; };
+		E6E8DBD91D44881B002671BB /* DeployedArmyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6E8DBD81D44881B002671BB /* DeployedArmyTableViewCell.xib */; };
+		E6E8DBDB1D448ACA002671BB /* DeployedArmyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8DBDA1D448ACA002671BB /* DeployedArmyTableViewCell.swift */; };
+		E6E8DBDD1D448CDD002671BB /* DeployedArmy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E8DBDC1D448CDD002671BB /* DeployedArmy.swift */; };
+		E6EB7EA51F43F46200DCB54E /* Json.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D4C1F43F46200DCB54E /* Json.m */; };
+		E6EB7EA61F43F46200DCB54E /* Jsonable.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D4E1F43F46200DCB54E /* Jsonable.m */; };
+		E6EB7EA71F43F46200DCB54E /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D501F43F46200DCB54E /* Util.m */; };
+		E6EB7EA81F43F46200DCB54E /* WebRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D521F43F46200DCB54E /* WebRequest.m */; };
+		E6EB7EA91F43F46200DCB54E /* WebRequestSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D541F43F46200DCB54E /* WebRequestSynchronizer.m */; };
+		E6EB7EAA1F43F46200DCB54E /* ActiveSpell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D571F43F46200DCB54E /* ActiveSpell.m */; };
+		E6EB7EAB1F43F46200DCB54E /* Building.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D591F43F46200DCB54E /* Building.m */; };
+		E6EB7EAC1F43F46200DCB54E /* ActiveSpellBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D5C1F43F46200DCB54E /* ActiveSpellBundle.m */; };
+		E6EB7EAD1F43F46200DCB54E /* ActiveSpellsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D5E1F43F46200DCB54E /* ActiveSpellsBundle.m */; };
+		E6EB7EAE1F43F46200DCB54E /* ArmyOffenseBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D601F43F46200DCB54E /* ArmyOffenseBundle.m */; };
+		E6EB7EAF1F43F46200DCB54E /* AttackBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D621F43F46200DCB54E /* AttackBundle.m */; };
+		E6EB7EB01F43F46200DCB54E /* AttackDragonInfoBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D641F43F46200DCB54E /* AttackDragonInfoBundle.m */; };
+		E6EB7EB11F43F46200DCB54E /* AvailableSpellsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D661F43F46200DCB54E /* AvailableSpellsBundle.m */; };
+		E6EB7EB21F43F46200DCB54E /* AvailableThieveryOperationBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D681F43F46200DCB54E /* AvailableThieveryOperationBundle.m */; };
+		E6EB7EB31F43F46200DCB54E /* AvailableThieveryOperationsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D6A1F43F46200DCB54E /* AvailableThieveryOperationsBundle.m */; };
+		E6EB7EB41F43F46200DCB54E /* BuildCostBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D6C1F43F46200DCB54E /* BuildCostBundle.m */; };
+		E6EB7EB51F43F46200DCB54E /* BuildingBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D6E1F43F46200DCB54E /* BuildingBundle.m */; };
+		E6EB7EB61F43F46200DCB54E /* BuildingInProgressBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D701F43F46200DCB54E /* BuildingInProgressBundle.m */; };
+		E6EB7EB71F43F46200DCB54E /* BuildingsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D721F43F46200DCB54E /* BuildingsBundle.m */; };
+		E6EB7EB81F43F46200DCB54E /* Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D741F43F46200DCB54E /* Bundle.m */; };
+		E6EB7EB91F43F46200DCB54E /* BundleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D761F43F46200DCB54E /* BundleFactory.m */; };
+		E6EB7EBA1F43F46200DCB54E /* ChatMessageBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D781F43F46200DCB54E /* ChatMessageBundle.m */; };
+		E6EB7EBB1F43F46200DCB54E /* ChatroomBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D7A1F43F46200DCB54E /* ChatroomBundle.m */; };
+		E6EB7EBC1F43F46200DCB54E /* DeployedArmiesBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D7C1F43F46200DCB54E /* DeployedArmiesBundle.m */; };
+		E6EB7EBD1F43F46200DCB54E /* DeployedArmyBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D7E1F43F46200DCB54E /* DeployedArmyBundle.m */; };
+		E6EB7EBE1F43F46200DCB54E /* DraftRateBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D801F43F46200DCB54E /* DraftRateBundle.m */; };
+		E6EB7EBF1F43F46200DCB54E /* ExplorationCostsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D821F43F46200DCB54E /* ExplorationCostsBundle.m */; };
+		E6EB7EC01F43F46200DCB54E /* ForumTopicBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D841F43F46200DCB54E /* ForumTopicBundle.m */; };
+		E6EB7EC11F43F46200DCB54E /* ForumTopicPostBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D861F43F46200DCB54E /* ForumTopicPostBundle.m */; };
+		E6EB7EC21F43F46200DCB54E /* ForumTopicPostsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D881F43F46200DCB54E /* ForumTopicPostsBundle.m */; };
+		E6EB7EC31F43F46200DCB54E /* ForumTopicsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D8A1F43F46200DCB54E /* ForumTopicsBundle.m */; };
+		E6EB7EC41F43F46200DCB54E /* FundDragonInfoBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D8C1F43F46200DCB54E /* FundDragonInfoBundle.m */; };
+		E6EB7EC51F43F46200DCB54E /* InfiltrateThievesBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D8E1F43F46200DCB54E /* InfiltrateThievesBundle.m */; };
+		E6EB7EC61F43F46200DCB54E /* KingdomBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D901F43F46200DCB54E /* KingdomBundle.m */; };
+		E6EB7EC71F43F46200DCB54E /* KingdomIntelBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D921F43F46200DCB54E /* KingdomIntelBundle.m */; };
+		E6EB7EC81F43F46200DCB54E /* KingdomProvinceBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D941F43F46200DCB54E /* KingdomProvinceBundle.m */; };
+		E6EB7EC91F43F46200DCB54E /* MilitaryBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D961F43F46200DCB54E /* MilitaryBundle.m */; };
+		E6EB7ECA1F43F46200DCB54E /* MilitaryInProgressBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D981F43F46200DCB54E /* MilitaryInProgressBundle.m */; };
+		E6EB7ECB1F43F46200DCB54E /* MilitarySettingsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D9A1F43F46200DCB54E /* MilitarySettingsBundle.m */; };
+		E6EB7ECC1F43F46200DCB54E /* NewsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D9C1F43F46200DCB54E /* NewsBundle.m */; };
+		E6EB7ECD1F43F46200DCB54E /* NewspaperBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7D9E1F43F46200DCB54E /* NewspaperBundle.m */; };
+		E6EB7ECE1F43F46200DCB54E /* PrivateMessageBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DA01F43F46200DCB54E /* PrivateMessageBundle.m */; };
+		E6EB7ECF1F43F46200DCB54E /* PrivateMessagesBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DA21F43F46200DCB54E /* PrivateMessagesBundle.m */; };
+		E6EB7ED01F43F46200DCB54E /* ProvinceIdBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DA41F43F46200DCB54E /* ProvinceIdBundle.m */; };
+		E6EB7ED11F43F46200DCB54E /* ProvinceIdsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DA61F43F46200DCB54E /* ProvinceIdsBundle.m */; };
+		E6EB7ED21F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DA81F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.m */; };
+		E6EB7ED31F43F46200DCB54E /* ProvinceIntelBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DAA1F43F46200DCB54E /* ProvinceIntelBundle.m */; };
+		E6EB7ED41F43F46200DCB54E /* ScienceBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DAC1F43F46200DCB54E /* ScienceBundle.m */; };
+		E6EB7ED51F43F46200DCB54E /* ScienceResultBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DAE1F43F46200DCB54E /* ScienceResultBundle.m */; };
+		E6EB7ED61F43F46200DCB54E /* ScientistBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DB01F43F46200DCB54E /* ScientistBundle.m */; };
+		E6EB7ED71F43F46200DCB54E /* SendAidBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DB21F43F46200DCB54E /* SendAidBundle.m */; };
+		E6EB7ED81F43F46200DCB54E /* SpellBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DB41F43F46200DCB54E /* SpellBundle.m */; };
+		E6EB7ED91F43F46200DCB54E /* SpellResultBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DB61F43F46200DCB54E /* SpellResultBundle.m */; };
+		E6EB7EDA1F43F46200DCB54E /* StateCouncilBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DB81F43F46200DCB54E /* StateCouncilBundle.m */; };
+		E6EB7EDB1F43F46200DCB54E /* StateHistoryBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DBA1F43F46200DCB54E /* StateHistoryBundle.m */; };
+		E6EB7EDC1F43F46200DCB54E /* ThieveryOperationBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DBC1F43F46200DCB54E /* ThieveryOperationBundle.m */; };
+		E6EB7EDD1F43F46200DCB54E /* ThroneBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DBE1F43F46200DCB54E /* ThroneBundle.m */; };
+		E6EB7EDE1F43F46200DCB54E /* TradeSettingsBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DC01F43F46200DCB54E /* TradeSettingsBundle.m */; };
+		E6EB7EDF1F43F46200DCB54E /* WarRoomBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DC21F43F46200DCB54E /* WarRoomBundle.m */; };
+		E6EB7EE01F43F46200DCB54E /* ChatCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DC41F43F46200DCB54E /* ChatCredentials.m */; };
+		E6EB7EE11F43F46200DCB54E /* Chatroom.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DC61F43F46200DCB54E /* Chatroom.m */; };
+		E6EB7EE21F43F46200DCB54E /* Database.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DC91F43F46200DCB54E /* Database.m */; };
+		E6EB7EE31F43F46200DCB54E /* KeyValueStore.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DCB1F43F46200DCB54E /* KeyValueStore.m */; };
+		E6EB7EE41F43F46200DCB54E /* UtopiaDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DCD1F43F46200DCB54E /* UtopiaDatabase.m */; };
+		E6EB7EE51F43F46200DCB54E /* UtopiaDatabaseV1.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DCF1F43F46200DCB54E /* UtopiaDatabaseV1.m */; };
+		E6EB7EE61F43F46200DCB54E /* DraftRate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DD11F43F46200DCB54E /* DraftRate.m */; };
+		E6EB7EE71F43F46200DCB54E /* Dragon.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DD31F43F46200DCB54E /* Dragon.m */; };
+		E6EB7EE81F43F46200DCB54E /* Forum.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DD51F43F46200DCB54E /* Forum.m */; };
+		E6EB7EE91F43F46200DCB54E /* HostilityMeter.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DD71F43F46200DCB54E /* HostilityMeter.m */; };
+		E6EB7EEA1F43F46200DCB54E /* IntelSubmitter.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DDA1F43F46200DCB54E /* IntelSubmitter.m */; };
+		E6EB7EEB1F43F46200DCB54E /* IntelSync.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DDC1F43F46200DCB54E /* IntelSync.m */; };
+		E6EB7EEC1F43F46200DCB54E /* IntelSyncFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DDE1F43F46200DCB54E /* IntelSyncFactory.m */; };
+		E6EB7EED1F43F46200DCB54E /* StingerUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DE01F43F46200DCB54E /* StingerUtil.m */; };
+		E6EB7EEE1F43F46200DCB54E /* UmunkUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DE21F43F46200DCB54E /* UmunkUtil.m */; };
+		E6EB7EEF1F43F46200DCB54E /* UpoopuUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DE41F43F46200DCB54E /* UpoopuUtil.m */; };
+		E6EB7EF01F43F46200DCB54E /* VerdeIntelUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DE61F43F46200DCB54E /* VerdeIntelUtil.m */; };
+		E6EB7EF11F43F46200DCB54E /* Kingdom.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DE81F43F46200DCB54E /* Kingdom.m */; };
+		E6EB7EF21F43F46200DCB54E /* NewsAttackEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DEB1F43F46200DCB54E /* NewsAttackEvent.m */; };
+		E6EB7EF31F43F46200DCB54E /* NewsEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DED1F43F46200DCB54E /* NewsEvent.m */; };
+		E6EB7EF41F43F46200DCB54E /* NewsMiscEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DEF1F43F46200DCB54E /* NewsMiscEvent.m */; };
+		E6EB7EF51F43F46200DCB54E /* NewsSpellEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DF11F43F46200DCB54E /* NewsSpellEvent.m */; };
+		E6EB7EF61F43F46200DCB54E /* NewsThieveryEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DF31F43F46200DCB54E /* NewsThieveryEvent.m */; };
+		E6EB7EF71F43F46200DCB54E /* NotificationMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DF51F43F46200DCB54E /* NotificationMaker.m */; };
+		E6EB7EF81F43F46200DCB54E /* HtmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DF81F43F46200DCB54E /* HtmlParser.m */; };
+		E6EB7EF91F43F46200DCB54E /* JsoupHtmlParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DFA1F43F46200DCB54E /* JsoupHtmlParser.m */; };
+		E6EB7EFA1F43F46200DCB54E /* UtopiaParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DFC1F43F46200DCB54E /* UtopiaParser.m */; };
+		E6EB7EFB1F43F46200DCB54E /* PrivateMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7DFE1F43F46200DCB54E /* PrivateMessage.m */; };
+		E6EB7EFC1F43F46200DCB54E /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E001F43F46200DCB54E /* Province.m */; };
+		E6EB7EFD1F43F46200DCB54E /* ProvinceCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E021F43F46200DCB54E /* ProvinceCredentials.m */; };
+		E6EB7EFE1F43F46200DCB54E /* ProvinceTagUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E041F43F46200DCB54E /* ProvinceTagUtil.m */; };
+		E6EB7EFF1F43F46200DCB54E /* Science.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E061F43F46200DCB54E /* Science.m */; };
+		E6EB7F001F43F46200DCB54E /* Scientist.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E081F43F46200DCB54E /* Scientist.m */; };
+		E6EB7F011F43F46200DCB54E /* Session.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E0A1F43F46200DCB54E /* Session.m */; };
+		E6EB7F021F43F46200DCB54E /* Settings.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E0C1F43F46200DCB54E /* Settings.m */; };
+		E6EB7F031F43F46200DCB54E /* Spell.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E0E1F43F46200DCB54E /* Spell.m */; };
+		E6EB7F041F43F46200DCB54E /* ThieveryOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E101F43F46200DCB54E /* ThieveryOperation.m */; };
+		E6EB7F051F43F46200DCB54E /* TrainArmyData.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E121F43F46200DCB54E /* TrainArmyData.m */; };
+		E6EB7F061F43F46200DCB54E /* Base64Util.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E151F43F46200DCB54E /* Base64Util.m */; };
+		E6EB7F071F43F46200DCB54E /* BuildVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E171F43F46200DCB54E /* BuildVersion.m */; };
+		E6EB7F081F43F46200DCB54E /* JavaScriptExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E191F43F46200DCB54E /* JavaScriptExecutor.m */; };
+		E6EB7F091F43F46200DCB54E /* UtopiaCache.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E1B1F43F46200DCB54E /* UtopiaCache.m */; };
+		E6EB7F0A1F43F46200DCB54E /* UtopiaUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E1D1F43F46200DCB54E /* UtopiaUtil.m */; };
+		E6EB7F0B1F43F46200DCB54E /* Vibrator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E1F1F43F46200DCB54E /* Vibrator.m */; };
+		E6EB7F0C1F43F46200DCB54E /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E231F43F46200DCB54E /* Connection.m */; };
+		E6EB7F0D1F43F46200DCB54E /* HtmlToPlainText.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E261F43F46200DCB54E /* HtmlToPlainText.m */; };
+		E6EB7F0E1F43F46200DCB54E /* ListLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E281F43F46200DCB54E /* ListLinks.m */; };
+		E6EB7F0F1F43F46200DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E2A1F43F46200DCB54E /* package-info.m */; };
+		E6EB7F101F43F46200DCB54E /* ChangeNotifyingArrayList.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E2D1F43F46200DCB54E /* ChangeNotifyingArrayList.m */; };
+		E6EB7F111F43F46200DCB54E /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E2F1F43F46200DCB54E /* DataUtil.m */; };
+		E6EB7F121F43F46200DCB54E /* HttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E311F43F46200DCB54E /* HttpConnection.m */; };
+		E6EB7F131F43F46200DCB54E /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E331F43F46200DCB54E /* StringUtil.m */; };
+		E6EB7F141F43F46200DCB54E /* Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E351F43F46200DCB54E /* Validate.m */; };
+		E6EB7F151F43F46200DCB54E /* W3CDom.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E371F43F46200DCB54E /* W3CDom.m */; };
+		E6EB7F161F43F46200DCB54E /* HttpStatusException.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E391F43F46200DCB54E /* HttpStatusException.m */; };
+		E6EB7F171F43F46200DCB54E /* ConstrainableInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E3C1F43F46200DCB54E /* ConstrainableInputStream.m */; };
+		E6EB7F181F43F46200DCB54E /* Normalizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E3E1F43F46200DCB54E /* Normalizer.m */; };
+		E6EB7F191F43F46200DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E401F43F46200DCB54E /* package-info.m */; };
+		E6EB7F1A1F43F46200DCB54E /* Jsoup.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E421F43F46200DCB54E /* Jsoup.m */; };
+		E6EB7F1B1F43F46200DCB54E /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E451F43F46200DCB54E /* Attribute.m */; };
+		E6EB7F1C1F43F46200DCB54E /* Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E471F43F46200DCB54E /* Attributes.m */; };
+		E6EB7F1D1F43F46200DCB54E /* BooleanAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E491F43F46200DCB54E /* BooleanAttribute.m */; };
+		E6EB7F1E1F43F46200DCB54E /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E4B1F43F46200DCB54E /* Comment.m */; };
+		E6EB7F1F1F43F46200DCB54E /* DataNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E4D1F43F46200DCB54E /* DataNode.m */; };
+		E6EB7F201F43F46200DCB54E /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E4F1F43F46200DCB54E /* Document.m */; };
+		E6EB7F211F43F46200DCB54E /* DocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E511F43F46200DCB54E /* DocumentType.m */; };
+		E6EB7F221F43F46200DCB54E /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E531F43F46200DCB54E /* Element.m */; };
+		E6EB7F231F43F46200DCB54E /* Entities.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E551F43F46200DCB54E /* Entities.m */; };
+		E6EB7F241F43F46200DCB54E /* FormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E571F43F46200DCB54E /* FormElement.m */; };
+		E6EB7F251F43F46200DCB54E /* LeafNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E591F43F46200DCB54E /* LeafNode.m */; };
+		E6EB7F261F43F46200DCB54E /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E5B1F43F46200DCB54E /* Node.m */; };
+		E6EB7F271F43F46200DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E5D1F43F46200DCB54E /* package-info.m */; };
+		E6EB7F281F43F46200DCB54E /* TextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E5F1F43F46200DCB54E /* TextNode.m */; };
+		E6EB7F291F43F46200DCB54E /* XmlDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E611F43F46200DCB54E /* XmlDeclaration.m */; };
+		E6EB7F2A1F43F46200DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E631F43F46200DCB54E /* package-info.m */; };
+		E6EB7F2B1F43F46200DCB54E /* CharacterReader.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E661F43F46200DCB54E /* CharacterReader.m */; };
+		E6EB7F2C1F43F46200DCB54E /* HtmlTreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E681F43F46200DCB54E /* HtmlTreeBuilder.m */; };
+		E6EB7F2D1F43F46200DCB54E /* HtmlTreeBuilderState.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E6A1F43F46200DCB54E /* HtmlTreeBuilderState.m */; };
+		E6EB7F2E1F43F46200DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E6C1F43F46200DCB54E /* package-info.m */; };
+		E6EB7F2F1F43F46200DCB54E /* ParseError.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E6E1F43F46200DCB54E /* ParseError.m */; };
+		E6EB7F301F43F46200DCB54E /* ParseErrorList.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E701F43F46200DCB54E /* ParseErrorList.m */; };
+		E6EB7F311F43F46200DCB54E /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E721F43F46200DCB54E /* Parser.m */; };
+		E6EB7F321F43F46200DCB54E /* ParseSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E741F43F46200DCB54E /* ParseSettings.m */; };
+		E6EB7F331F43F46200DCB54E /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E761F43F46200DCB54E /* Tag.m */; };
+		E6EB7F341F43F46200DCB54E /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E781F43F46200DCB54E /* Token.m */; };
+		E6EB7F351F43F46200DCB54E /* Tokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E7A1F43F46200DCB54E /* Tokeniser.m */; };
+		E6EB7F361F43F46200DCB54E /* TokeniserState.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E7C1F43F46200DCB54E /* TokeniserState.m */; };
+		E6EB7F371F43F46200DCB54E /* TokenQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E7E1F43F46200DCB54E /* TokenQueue.m */; };
+		E6EB7F381F43F46200DCB54E /* TreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E801F43F46200DCB54E /* TreeBuilder.m */; };
+		E6EB7F391F43F46200DCB54E /* XmlTreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E821F43F46200DCB54E /* XmlTreeBuilder.m */; };
+		E6EB7F3A1F43F46200DCB54E /* Cleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E851F43F46200DCB54E /* Cleaner.m */; };
+		E6EB7F3B1F43F46200DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E871F43F46200DCB54E /* package-info.m */; };
+		E6EB7F3C1F43F46200DCB54E /* Whitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E891F43F46200DCB54E /* Whitelist.m */; };
+		E6EB7F3D1F43F46200DCB54E /* Collector.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E8C1F43F46200DCB54E /* Collector.m */; };
+		E6EB7F3E1F43F46200DCB54E /* CombiningEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E8E1F43F46200DCB54E /* CombiningEvaluator.m */; };
+		E6EB7F3F1F43F46300DCB54E /* Elements.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E901F43F46200DCB54E /* Elements.m */; };
+		E6EB7F401F43F46300DCB54E /* Evaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E921F43F46200DCB54E /* Evaluator.m */; };
+		E6EB7F411F43F46300DCB54E /* NodeTraversor.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E941F43F46200DCB54E /* NodeTraversor.m */; };
+		E6EB7F421F43F46300DCB54E /* NodeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E961F43F46200DCB54E /* NodeVisitor.m */; };
+		E6EB7F431F43F46300DCB54E /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E981F43F46200DCB54E /* package-info.m */; };
+		E6EB7F441F43F46300DCB54E /* QueryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E9A1F43F46200DCB54E /* QueryParser.m */; };
+		E6EB7F451F43F46300DCB54E /* Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E9C1F43F46200DCB54E /* Selector.m */; };
+		E6EB7F461F43F46300DCB54E /* StructuralEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7E9E1F43F46200DCB54E /* StructuralEvaluator.m */; };
+		E6EB7F471F43F46300DCB54E /* SerializationException.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7EA01F43F46200DCB54E /* SerializationException.m */; };
+		E6EB7F481F43F46300DCB54E /* UncheckedIOException.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7EA21F43F46200DCB54E /* UncheckedIOException.m */; };
+		E6EB7F491F43F46300DCB54E /* UnsupportedMimeTypeException.m in Sources */ = {isa = PBXBuildFile; fileRef = E6EB7EA41F43F46200DCB54E /* UnsupportedMimeTypeException.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E6A8ACEE1CFD147F0094C15F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6A8ACD11CFD147F0094C15F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6A8ACD81CFD147F0094C15F;
+			remoteInfo = Utopia;
+		};
+		E6A8ACF91CFD147F0094C15F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E6A8ACD11CFD147F0094C15F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E6A8ACD81CFD147F0094C15F;
+			remoteInfo = Utopia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E606498B1D051398005BC45B /* ProvinceTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceTabController.swift; sourceTree = "<group>"; };
+		E606498D1D052ACC005BC45B /* Province.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		E607998E1D62963A00C90CED /* KingdomController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomController.swift; sourceTree = "<group>"; };
+		E60799901D629A4800C90CED /* CollectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionAdapter.swift; sourceTree = "<group>"; };
+		E60799921D629F6C00C90CED /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		E60799941D629FB700C90CED /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		E63D85861D6CB06700581A4C /* CastableSpell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastableSpell.swift; sourceTree = "<group>"; };
+		E63D85881D6CB09400581A4C /* SpellCellFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCellFactory.swift; sourceTree = "<group>"; };
+		E64845411D57EE6F00C0371F /* VerdeIntelSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerdeIntelSync.swift; sourceTree = "<group>"; };
+		E657D25E1D470DD500710E02 /* IntelSyncController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntelSyncController.swift; sourceTree = "<group>"; };
+		E657D2601D4711AE00710E02 /* UpoopuIntelSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpoopuIntelSync.swift; sourceTree = "<group>"; };
+		E657D41F1D49AF2C00710E02 /* IntelSyncType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntelSyncType.swift; sourceTree = "<group>"; };
+		E657D4211D49B48B00710E02 /* IntelSyncFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntelSyncFactory.swift; sourceTree = "<group>"; };
+		E657D4241D49B75000710E02 /* IosJavaScriptExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosJavaScriptExecutor.swift; sourceTree = "<group>"; };
+		E657D4261D49B77500710E02 /* IosBase64Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosBase64Util.swift; sourceTree = "<group>"; };
+		E657D4281D49B91500710E02 /* upoopu_lib.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = upoopu_lib.js; path = Utopia/resources/upoopu_lib.js; sourceTree = "<group>"; };
+		E65B675C1D261AE20061FCCB /* RefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshControl.swift; sourceTree = "<group>"; };
+		E6625B7D1D4BC39C00EBD992 /* BuildVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildVersion.swift; sourceTree = "<group>"; };
+		E6638AE71D26D41500FF5444 /* LoadingDialog.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadingDialog.xib; sourceTree = "<group>"; };
+		E6638AE91D26D4F300FF5444 /* LoadingDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
+		E6638AEB1D275F1300FF5444 /* ProvinceNewsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceNewsController.swift; sourceTree = "<group>"; };
+		E6638AEE1D2761F200FF5444 /* ProvinceNewsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProvinceNewsCell.xib; sourceTree = "<group>"; };
+		E6638AF01D2764D800FF5444 /* ProvinceNewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceNewsCell.swift; sourceTree = "<group>"; };
+		E6638AF21D2767A400FF5444 /* ProvinceNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceNews.swift; sourceTree = "<group>"; };
+		E6638AF41D28AB3A00FF5444 /* Kingdom.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kingdom.swift; sourceTree = "<group>"; };
+		E6638AF61D28AD1100FF5444 /* UtopiaTagUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtopiaTagUtil.swift; sourceTree = "<group>"; };
+		E6638AF81D28AE4000FF5444 /* JavaUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JavaUtil.swift; sourceTree = "<group>"; };
+		E6638AFB1D28B5B400FF5444 /* ProvinceTagCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProvinceTagCell.xib; sourceTree = "<group>"; };
+		E6638AFD1D28B63200FF5444 /* ProvinceTagCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinceTagCell.swift; sourceTree = "<group>"; };
+		E670DE701D64E2A3006665EB /* KingdomProvinceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KingdomProvinceCell.xib; sourceTree = "<group>"; };
+		E670DE721D64E2FC006665EB /* KingdomProvinceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomProvinceCell.swift; sourceTree = "<group>"; };
+		E6A02E171D5C10F80014F1B6 /* GenericIntelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericIntelController.swift; sourceTree = "<group>"; };
+		E6A02E191D5C12080014F1B6 /* UpoopuIntelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UpoopuIntelController.swift; sourceTree = "<group>"; };
+		E6A02E1B1D5C182B0014F1B6 /* VerdeIntelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerdeIntelController.swift; sourceTree = "<group>"; };
+		E6A02E1D1D5C229E0014F1B6 /* UmunkIntelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmunkIntelController.swift; sourceTree = "<group>"; };
+		E6A02E1F1D5C22D70014F1B6 /* StingerIntelController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StingerIntelController.swift; sourceTree = "<group>"; };
+		E6A02E211D5C35190014F1B6 /* UmunkIntelSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UmunkIntelSync.swift; sourceTree = "<group>"; };
+		E6A02E231D5C36CF0014F1B6 /* StingerIntelSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StingerIntelSync.swift; sourceTree = "<group>"; };
+		E6A1A6661D6A0742002DF8AD /* ReadOnlyThroneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadOnlyThroneViewController.swift; sourceTree = "<group>"; };
+		E6A1A6681D6AA949002DF8AD /* OffensiveSpellsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffensiveSpellsController.swift; sourceTree = "<group>"; };
+		E6A8ACD91CFD147F0094C15F /* Utopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Utopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A8ACDC1CFD147F0094C15F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E6A8ACDE1CFD147F0094C15F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E6A8ACE11CFD147F0094C15F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E6A8ACE31CFD147F0094C15F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E6A8ACE81CFD147F0094C15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A8ACED1CFD147F0094C15F /* UtopiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtopiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A8ACF11CFD147F0094C15F /* UtopiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaTests.swift; sourceTree = "<group>"; };
+		E6A8ACF31CFD147F0094C15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A8ACF81CFD147F0094C15F /* UtopiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UtopiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6A8ACFC1CFD147F0094C15F /* UtopiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtopiaUITests.swift; sourceTree = "<group>"; };
+		E6A8ACFE1CFD147F0094C15F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6A8AD521CFD2AA60094C15F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		E6A8AD541CFD2AB00094C15F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		E6A8AD851CFD33060094C15F /* Utopia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Utopia-Bridging-Header.h"; sourceTree = "<group>"; };
+		E6A8AD9D1CFD42AF0094C15F /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
+		E6AC3AAC1D122C820066A438 /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		E6AC3AAE1D123A0F0066A438 /* DraftRate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftRate.swift; sourceTree = "<group>"; };
+		E6AC3AB01D1744D90066A438 /* UiTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UiTheme.swift; sourceTree = "<group>"; };
+		E6AC3AB21D17476E0066A438 /* Race.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Race.swift; sourceTree = "<group>"; };
+		E6AC3AB51D1AE2160066A438 /* Dialogs.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dialogs.storyboard; sourceTree = "<group>"; };
+		E6AC3AB71D1B03500066A438 /* TrainUnitsDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainUnitsDialog.swift; sourceTree = "<group>"; };
+		E6BA9F5B1D6D273200284CD9 /* UtopiaUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UtopiaUtil.swift; sourceTree = "<group>"; };
+		E6C1ED151D4C549900CA088D /* BadAccessType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BadAccessType.swift; sourceTree = "<group>"; };
+		E6D211EE1D24B6C500FC0E35 /* WebRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebRequest.swift; sourceTree = "<group>"; };
+		E6D211F01D25528000FC0E35 /* AutomaticApnsTokenRegistrar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutomaticApnsTokenRegistrar.swift; sourceTree = "<group>"; };
+		E6D211F21D255B9200FC0E35 /* KingdomIdentifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomIdentifier.swift; sourceTree = "<group>"; };
+		E6D211F41D26020300FC0E35 /* WebViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewDelegate.swift; sourceTree = "<group>"; };
+		E6D801721D1CCF0A00EF2223 /* TrainArmyData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainArmyData.swift; sourceTree = "<group>"; };
+		E6D801741D1F14DE00EF2223 /* MilitaryWagesDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MilitaryWagesDialog.swift; sourceTree = "<group>"; };
+		E6D801761D1F985700EF2223 /* DraftRateDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftRateDialog.swift; sourceTree = "<group>"; };
+		E6D801791D1F9BE200EF2223 /* PickerViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewAdapter.swift; sourceTree = "<group>"; };
+		E6D8017B1D1F9D9200EF2223 /* DefaultPickerViewItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultPickerViewItem.xib; sourceTree = "<group>"; };
+		E6D8017D1D1F9E1400EF2223 /* DefaultPickerViewItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultPickerViewItem.swift; sourceTree = "<group>"; };
+		E6D801801D207E9500EF2223 /* SpellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SpellTableViewCell.xib; sourceTree = "<group>"; };
+		E6D801821D2080F100EF2223 /* SpellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellTableViewCell.swift; sourceTree = "<group>"; };
+		E6D801841D20838300EF2223 /* DefensiveSpellsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefensiveSpellsController.swift; sourceTree = "<group>"; };
+		E6D801861D20845600EF2223 /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewAdapter.swift; sourceTree = "<group>"; };
+		E6D8018C1D208BCA00EF2223 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E6D8018D1D208BCA00EF2223 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		E6D801901D2099DB00EF2223 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
+		E6D801921D21FE2800EF2223 /* Building.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Building.swift; sourceTree = "<group>"; };
+		E6D8019B1D22271400EF2223 /* CastSpellDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CastSpellDialog.swift; sourceTree = "<group>"; };
+		E6D8019D1D234C6F00EF2223 /* SpellResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellResult.swift; sourceTree = "<group>"; };
+		E6D8019F1D2365CE00EF2223 /* KingdomChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KingdomChatController.swift; sourceTree = "<group>"; };
+		E6D801A11D23663300EF2223 /* ChatroomMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomMessage.swift; sourceTree = "<group>"; };
+		E6D801A41D236A3C00EF2223 /* ChatroomMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatroomMessageCell.xib; sourceTree = "<group>"; };
+		E6D801A61D236B1600EF2223 /* ChatroomMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatroomMessageCell.swift; sourceTree = "<group>"; };
+		E6DDA5B51CFFE9D4009B1099 /* org */ = {isa = PBXFileReference; lastKnownFileType = folder; name = org; path = "Utopia/java-resources/org"; sourceTree = "<group>"; };
+		E6DDA7681D0298EC009B1099 /* IosDatabase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosDatabase.swift; sourceTree = "<group>"; };
+		E6DDA76A1D02A032009B1099 /* NotificationMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationMaker.swift; sourceTree = "<group>"; };
+		E6DDA76C1D02A098009B1099 /* Vibrator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vibrator.swift; sourceTree = "<group>"; };
+		E6DDA7701D035305009B1099 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		E6DDA7721D035547009B1099 /* ThroneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThroneViewController.swift; sourceTree = "<group>"; };
+		E6DDA7741D038586009B1099 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
+		E6DDA7761D039AE1009B1099 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		E6DDA7781D046852009B1099 /* IosKeyValueStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IosKeyValueStore.swift; sourceTree = "<group>"; };
+		E6E8DBD81D44881B002671BB /* DeployedArmyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeployedArmyTableViewCell.xib; sourceTree = "<group>"; };
+		E6E8DBDA1D448ACA002671BB /* DeployedArmyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeployedArmyTableViewCell.swift; sourceTree = "<group>"; };
+		E6E8DBDC1D448CDD002671BB /* DeployedArmy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeployedArmy.swift; sourceTree = "<group>"; };
+		E6EB7D4B1F43F46200DCB54E /* Json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Json.h; sourceTree = "<group>"; };
+		E6EB7D4C1F43F46200DCB54E /* Json.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Json.m; sourceTree = "<group>"; };
+		E6EB7D4D1F43F46200DCB54E /* Jsonable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jsonable.h; sourceTree = "<group>"; };
+		E6EB7D4E1F43F46200DCB54E /* Jsonable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jsonable.m; sourceTree = "<group>"; };
+		E6EB7D4F1F43F46200DCB54E /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		E6EB7D501F43F46200DCB54E /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		E6EB7D511F43F46200DCB54E /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequest.h; sourceTree = "<group>"; };
+		E6EB7D521F43F46200DCB54E /* WebRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequest.m; sourceTree = "<group>"; };
+		E6EB7D531F43F46200DCB54E /* WebRequestSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestSynchronizer.h; sourceTree = "<group>"; };
+		E6EB7D541F43F46200DCB54E /* WebRequestSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebRequestSynchronizer.m; sourceTree = "<group>"; };
+		E6EB7D561F43F46200DCB54E /* ActiveSpell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveSpell.h; sourceTree = "<group>"; };
+		E6EB7D571F43F46200DCB54E /* ActiveSpell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveSpell.m; sourceTree = "<group>"; };
+		E6EB7D581F43F46200DCB54E /* Building.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Building.h; sourceTree = "<group>"; };
+		E6EB7D591F43F46200DCB54E /* Building.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Building.m; sourceTree = "<group>"; };
+		E6EB7D5B1F43F46200DCB54E /* ActiveSpellBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveSpellBundle.h; sourceTree = "<group>"; };
+		E6EB7D5C1F43F46200DCB54E /* ActiveSpellBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveSpellBundle.m; sourceTree = "<group>"; };
+		E6EB7D5D1F43F46200DCB54E /* ActiveSpellsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActiveSpellsBundle.h; sourceTree = "<group>"; };
+		E6EB7D5E1F43F46200DCB54E /* ActiveSpellsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActiveSpellsBundle.m; sourceTree = "<group>"; };
+		E6EB7D5F1F43F46200DCB54E /* ArmyOffenseBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArmyOffenseBundle.h; sourceTree = "<group>"; };
+		E6EB7D601F43F46200DCB54E /* ArmyOffenseBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArmyOffenseBundle.m; sourceTree = "<group>"; };
+		E6EB7D611F43F46200DCB54E /* AttackBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackBundle.h; sourceTree = "<group>"; };
+		E6EB7D621F43F46200DCB54E /* AttackBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackBundle.m; sourceTree = "<group>"; };
+		E6EB7D631F43F46200DCB54E /* AttackDragonInfoBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttackDragonInfoBundle.h; sourceTree = "<group>"; };
+		E6EB7D641F43F46200DCB54E /* AttackDragonInfoBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttackDragonInfoBundle.m; sourceTree = "<group>"; };
+		E6EB7D651F43F46200DCB54E /* AvailableSpellsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableSpellsBundle.h; sourceTree = "<group>"; };
+		E6EB7D661F43F46200DCB54E /* AvailableSpellsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableSpellsBundle.m; sourceTree = "<group>"; };
+		E6EB7D671F43F46200DCB54E /* AvailableThieveryOperationBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableThieveryOperationBundle.h; sourceTree = "<group>"; };
+		E6EB7D681F43F46200DCB54E /* AvailableThieveryOperationBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableThieveryOperationBundle.m; sourceTree = "<group>"; };
+		E6EB7D691F43F46200DCB54E /* AvailableThieveryOperationsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailableThieveryOperationsBundle.h; sourceTree = "<group>"; };
+		E6EB7D6A1F43F46200DCB54E /* AvailableThieveryOperationsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailableThieveryOperationsBundle.m; sourceTree = "<group>"; };
+		E6EB7D6B1F43F46200DCB54E /* BuildCostBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildCostBundle.h; sourceTree = "<group>"; };
+		E6EB7D6C1F43F46200DCB54E /* BuildCostBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildCostBundle.m; sourceTree = "<group>"; };
+		E6EB7D6D1F43F46200DCB54E /* BuildingBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingBundle.h; sourceTree = "<group>"; };
+		E6EB7D6E1F43F46200DCB54E /* BuildingBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingBundle.m; sourceTree = "<group>"; };
+		E6EB7D6F1F43F46200DCB54E /* BuildingInProgressBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingInProgressBundle.h; sourceTree = "<group>"; };
+		E6EB7D701F43F46200DCB54E /* BuildingInProgressBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingInProgressBundle.m; sourceTree = "<group>"; };
+		E6EB7D711F43F46200DCB54E /* BuildingsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildingsBundle.h; sourceTree = "<group>"; };
+		E6EB7D721F43F46200DCB54E /* BuildingsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildingsBundle.m; sourceTree = "<group>"; };
+		E6EB7D731F43F46200DCB54E /* Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bundle.h; sourceTree = "<group>"; };
+		E6EB7D741F43F46200DCB54E /* Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bundle.m; sourceTree = "<group>"; };
+		E6EB7D751F43F46200DCB54E /* BundleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleFactory.h; sourceTree = "<group>"; };
+		E6EB7D761F43F46200DCB54E /* BundleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BundleFactory.m; sourceTree = "<group>"; };
+		E6EB7D771F43F46200DCB54E /* ChatMessageBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatMessageBundle.h; sourceTree = "<group>"; };
+		E6EB7D781F43F46200DCB54E /* ChatMessageBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatMessageBundle.m; sourceTree = "<group>"; };
+		E6EB7D791F43F46200DCB54E /* ChatroomBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatroomBundle.h; sourceTree = "<group>"; };
+		E6EB7D7A1F43F46200DCB54E /* ChatroomBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatroomBundle.m; sourceTree = "<group>"; };
+		E6EB7D7B1F43F46200DCB54E /* DeployedArmiesBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeployedArmiesBundle.h; sourceTree = "<group>"; };
+		E6EB7D7C1F43F46200DCB54E /* DeployedArmiesBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeployedArmiesBundle.m; sourceTree = "<group>"; };
+		E6EB7D7D1F43F46200DCB54E /* DeployedArmyBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeployedArmyBundle.h; sourceTree = "<group>"; };
+		E6EB7D7E1F43F46200DCB54E /* DeployedArmyBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeployedArmyBundle.m; sourceTree = "<group>"; };
+		E6EB7D7F1F43F46200DCB54E /* DraftRateBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraftRateBundle.h; sourceTree = "<group>"; };
+		E6EB7D801F43F46200DCB54E /* DraftRateBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraftRateBundle.m; sourceTree = "<group>"; };
+		E6EB7D811F43F46200DCB54E /* ExplorationCostsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplorationCostsBundle.h; sourceTree = "<group>"; };
+		E6EB7D821F43F46200DCB54E /* ExplorationCostsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplorationCostsBundle.m; sourceTree = "<group>"; };
+		E6EB7D831F43F46200DCB54E /* ForumTopicBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTopicBundle.h; sourceTree = "<group>"; };
+		E6EB7D841F43F46200DCB54E /* ForumTopicBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTopicBundle.m; sourceTree = "<group>"; };
+		E6EB7D851F43F46200DCB54E /* ForumTopicPostBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTopicPostBundle.h; sourceTree = "<group>"; };
+		E6EB7D861F43F46200DCB54E /* ForumTopicPostBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTopicPostBundle.m; sourceTree = "<group>"; };
+		E6EB7D871F43F46200DCB54E /* ForumTopicPostsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTopicPostsBundle.h; sourceTree = "<group>"; };
+		E6EB7D881F43F46200DCB54E /* ForumTopicPostsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTopicPostsBundle.m; sourceTree = "<group>"; };
+		E6EB7D891F43F46200DCB54E /* ForumTopicsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForumTopicsBundle.h; sourceTree = "<group>"; };
+		E6EB7D8A1F43F46200DCB54E /* ForumTopicsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForumTopicsBundle.m; sourceTree = "<group>"; };
+		E6EB7D8B1F43F46200DCB54E /* FundDragonInfoBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FundDragonInfoBundle.h; sourceTree = "<group>"; };
+		E6EB7D8C1F43F46200DCB54E /* FundDragonInfoBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FundDragonInfoBundle.m; sourceTree = "<group>"; };
+		E6EB7D8D1F43F46200DCB54E /* InfiltrateThievesBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfiltrateThievesBundle.h; sourceTree = "<group>"; };
+		E6EB7D8E1F43F46200DCB54E /* InfiltrateThievesBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfiltrateThievesBundle.m; sourceTree = "<group>"; };
+		E6EB7D8F1F43F46200DCB54E /* KingdomBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomBundle.h; sourceTree = "<group>"; };
+		E6EB7D901F43F46200DCB54E /* KingdomBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomBundle.m; sourceTree = "<group>"; };
+		E6EB7D911F43F46200DCB54E /* KingdomIntelBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomIntelBundle.h; sourceTree = "<group>"; };
+		E6EB7D921F43F46200DCB54E /* KingdomIntelBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomIntelBundle.m; sourceTree = "<group>"; };
+		E6EB7D931F43F46200DCB54E /* KingdomProvinceBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KingdomProvinceBundle.h; sourceTree = "<group>"; };
+		E6EB7D941F43F46200DCB54E /* KingdomProvinceBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KingdomProvinceBundle.m; sourceTree = "<group>"; };
+		E6EB7D951F43F46200DCB54E /* MilitaryBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilitaryBundle.h; sourceTree = "<group>"; };
+		E6EB7D961F43F46200DCB54E /* MilitaryBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilitaryBundle.m; sourceTree = "<group>"; };
+		E6EB7D971F43F46200DCB54E /* MilitaryInProgressBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilitaryInProgressBundle.h; sourceTree = "<group>"; };
+		E6EB7D981F43F46200DCB54E /* MilitaryInProgressBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilitaryInProgressBundle.m; sourceTree = "<group>"; };
+		E6EB7D991F43F46200DCB54E /* MilitarySettingsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MilitarySettingsBundle.h; sourceTree = "<group>"; };
+		E6EB7D9A1F43F46200DCB54E /* MilitarySettingsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MilitarySettingsBundle.m; sourceTree = "<group>"; };
+		E6EB7D9B1F43F46200DCB54E /* NewsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsBundle.h; sourceTree = "<group>"; };
+		E6EB7D9C1F43F46200DCB54E /* NewsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsBundle.m; sourceTree = "<group>"; };
+		E6EB7D9D1F43F46200DCB54E /* NewspaperBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewspaperBundle.h; sourceTree = "<group>"; };
+		E6EB7D9E1F43F46200DCB54E /* NewspaperBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewspaperBundle.m; sourceTree = "<group>"; };
+		E6EB7D9F1F43F46200DCB54E /* PrivateMessageBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateMessageBundle.h; sourceTree = "<group>"; };
+		E6EB7DA01F43F46200DCB54E /* PrivateMessageBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateMessageBundle.m; sourceTree = "<group>"; };
+		E6EB7DA11F43F46200DCB54E /* PrivateMessagesBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateMessagesBundle.h; sourceTree = "<group>"; };
+		E6EB7DA21F43F46200DCB54E /* PrivateMessagesBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateMessagesBundle.m; sourceTree = "<group>"; };
+		E6EB7DA31F43F46200DCB54E /* ProvinceIdBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceIdBundle.h; sourceTree = "<group>"; };
+		E6EB7DA41F43F46200DCB54E /* ProvinceIdBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceIdBundle.m; sourceTree = "<group>"; };
+		E6EB7DA51F43F46200DCB54E /* ProvinceIdsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceIdsBundle.h; sourceTree = "<group>"; };
+		E6EB7DA61F43F46200DCB54E /* ProvinceIdsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceIdsBundle.m; sourceTree = "<group>"; };
+		E6EB7DA71F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceIntelActiveSpellBundle.h; sourceTree = "<group>"; };
+		E6EB7DA81F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceIntelActiveSpellBundle.m; sourceTree = "<group>"; };
+		E6EB7DA91F43F46200DCB54E /* ProvinceIntelBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceIntelBundle.h; sourceTree = "<group>"; };
+		E6EB7DAA1F43F46200DCB54E /* ProvinceIntelBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceIntelBundle.m; sourceTree = "<group>"; };
+		E6EB7DAB1F43F46200DCB54E /* ScienceBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScienceBundle.h; sourceTree = "<group>"; };
+		E6EB7DAC1F43F46200DCB54E /* ScienceBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScienceBundle.m; sourceTree = "<group>"; };
+		E6EB7DAD1F43F46200DCB54E /* ScienceResultBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScienceResultBundle.h; sourceTree = "<group>"; };
+		E6EB7DAE1F43F46200DCB54E /* ScienceResultBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScienceResultBundle.m; sourceTree = "<group>"; };
+		E6EB7DAF1F43F46200DCB54E /* ScientistBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScientistBundle.h; sourceTree = "<group>"; };
+		E6EB7DB01F43F46200DCB54E /* ScientistBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScientistBundle.m; sourceTree = "<group>"; };
+		E6EB7DB11F43F46200DCB54E /* SendAidBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendAidBundle.h; sourceTree = "<group>"; };
+		E6EB7DB21F43F46200DCB54E /* SendAidBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendAidBundle.m; sourceTree = "<group>"; };
+		E6EB7DB31F43F46200DCB54E /* SpellBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellBundle.h; sourceTree = "<group>"; };
+		E6EB7DB41F43F46200DCB54E /* SpellBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellBundle.m; sourceTree = "<group>"; };
+		E6EB7DB51F43F46200DCB54E /* SpellResultBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpellResultBundle.h; sourceTree = "<group>"; };
+		E6EB7DB61F43F46200DCB54E /* SpellResultBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpellResultBundle.m; sourceTree = "<group>"; };
+		E6EB7DB71F43F46200DCB54E /* StateCouncilBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateCouncilBundle.h; sourceTree = "<group>"; };
+		E6EB7DB81F43F46200DCB54E /* StateCouncilBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateCouncilBundle.m; sourceTree = "<group>"; };
+		E6EB7DB91F43F46200DCB54E /* StateHistoryBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateHistoryBundle.h; sourceTree = "<group>"; };
+		E6EB7DBA1F43F46200DCB54E /* StateHistoryBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateHistoryBundle.m; sourceTree = "<group>"; };
+		E6EB7DBB1F43F46200DCB54E /* ThieveryOperationBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThieveryOperationBundle.h; sourceTree = "<group>"; };
+		E6EB7DBC1F43F46200DCB54E /* ThieveryOperationBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThieveryOperationBundle.m; sourceTree = "<group>"; };
+		E6EB7DBD1F43F46200DCB54E /* ThroneBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThroneBundle.h; sourceTree = "<group>"; };
+		E6EB7DBE1F43F46200DCB54E /* ThroneBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThroneBundle.m; sourceTree = "<group>"; };
+		E6EB7DBF1F43F46200DCB54E /* TradeSettingsBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TradeSettingsBundle.h; sourceTree = "<group>"; };
+		E6EB7DC01F43F46200DCB54E /* TradeSettingsBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TradeSettingsBundle.m; sourceTree = "<group>"; };
+		E6EB7DC11F43F46200DCB54E /* WarRoomBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WarRoomBundle.h; sourceTree = "<group>"; };
+		E6EB7DC21F43F46200DCB54E /* WarRoomBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WarRoomBundle.m; sourceTree = "<group>"; };
+		E6EB7DC31F43F46200DCB54E /* ChatCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatCredentials.h; sourceTree = "<group>"; };
+		E6EB7DC41F43F46200DCB54E /* ChatCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatCredentials.m; sourceTree = "<group>"; };
+		E6EB7DC51F43F46200DCB54E /* Chatroom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chatroom.h; sourceTree = "<group>"; };
+		E6EB7DC61F43F46200DCB54E /* Chatroom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chatroom.m; sourceTree = "<group>"; };
+		E6EB7DC81F43F46200DCB54E /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Database.h; sourceTree = "<group>"; };
+		E6EB7DC91F43F46200DCB54E /* Database.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Database.m; sourceTree = "<group>"; };
+		E6EB7DCA1F43F46200DCB54E /* KeyValueStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueStore.h; sourceTree = "<group>"; };
+		E6EB7DCB1F43F46200DCB54E /* KeyValueStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueStore.m; sourceTree = "<group>"; };
+		E6EB7DCC1F43F46200DCB54E /* UtopiaDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopiaDatabase.h; sourceTree = "<group>"; };
+		E6EB7DCD1F43F46200DCB54E /* UtopiaDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopiaDatabase.m; sourceTree = "<group>"; };
+		E6EB7DCE1F43F46200DCB54E /* UtopiaDatabaseV1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopiaDatabaseV1.h; sourceTree = "<group>"; };
+		E6EB7DCF1F43F46200DCB54E /* UtopiaDatabaseV1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopiaDatabaseV1.m; sourceTree = "<group>"; };
+		E6EB7DD01F43F46200DCB54E /* DraftRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraftRate.h; sourceTree = "<group>"; };
+		E6EB7DD11F43F46200DCB54E /* DraftRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraftRate.m; sourceTree = "<group>"; };
+		E6EB7DD21F43F46200DCB54E /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
+		E6EB7DD31F43F46200DCB54E /* Dragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon.m; sourceTree = "<group>"; };
+		E6EB7DD41F43F46200DCB54E /* Forum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Forum.h; sourceTree = "<group>"; };
+		E6EB7DD51F43F46200DCB54E /* Forum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Forum.m; sourceTree = "<group>"; };
+		E6EB7DD61F43F46200DCB54E /* HostilityMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HostilityMeter.h; sourceTree = "<group>"; };
+		E6EB7DD71F43F46200DCB54E /* HostilityMeter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HostilityMeter.m; sourceTree = "<group>"; };
+		E6EB7DD91F43F46200DCB54E /* IntelSubmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelSubmitter.h; sourceTree = "<group>"; };
+		E6EB7DDA1F43F46200DCB54E /* IntelSubmitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelSubmitter.m; sourceTree = "<group>"; };
+		E6EB7DDB1F43F46200DCB54E /* IntelSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelSync.h; sourceTree = "<group>"; };
+		E6EB7DDC1F43F46200DCB54E /* IntelSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelSync.m; sourceTree = "<group>"; };
+		E6EB7DDD1F43F46200DCB54E /* IntelSyncFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntelSyncFactory.h; sourceTree = "<group>"; };
+		E6EB7DDE1F43F46200DCB54E /* IntelSyncFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntelSyncFactory.m; sourceTree = "<group>"; };
+		E6EB7DDF1F43F46200DCB54E /* StingerUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StingerUtil.h; sourceTree = "<group>"; };
+		E6EB7DE01F43F46200DCB54E /* StingerUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StingerUtil.m; sourceTree = "<group>"; };
+		E6EB7DE11F43F46200DCB54E /* UmunkUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmunkUtil.h; sourceTree = "<group>"; };
+		E6EB7DE21F43F46200DCB54E /* UmunkUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UmunkUtil.m; sourceTree = "<group>"; };
+		E6EB7DE31F43F46200DCB54E /* UpoopuUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpoopuUtil.h; sourceTree = "<group>"; };
+		E6EB7DE41F43F46200DCB54E /* UpoopuUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpoopuUtil.m; sourceTree = "<group>"; };
+		E6EB7DE51F43F46200DCB54E /* VerdeIntelUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerdeIntelUtil.h; sourceTree = "<group>"; };
+		E6EB7DE61F43F46200DCB54E /* VerdeIntelUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerdeIntelUtil.m; sourceTree = "<group>"; };
+		E6EB7DE71F43F46200DCB54E /* Kingdom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Kingdom.h; sourceTree = "<group>"; };
+		E6EB7DE81F43F46200DCB54E /* Kingdom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kingdom.m; sourceTree = "<group>"; };
+		E6EB7DEA1F43F46200DCB54E /* NewsAttackEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsAttackEvent.h; sourceTree = "<group>"; };
+		E6EB7DEB1F43F46200DCB54E /* NewsAttackEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsAttackEvent.m; sourceTree = "<group>"; };
+		E6EB7DEC1F43F46200DCB54E /* NewsEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsEvent.h; sourceTree = "<group>"; };
+		E6EB7DED1F43F46200DCB54E /* NewsEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsEvent.m; sourceTree = "<group>"; };
+		E6EB7DEE1F43F46200DCB54E /* NewsMiscEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsMiscEvent.h; sourceTree = "<group>"; };
+		E6EB7DEF1F43F46200DCB54E /* NewsMiscEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsMiscEvent.m; sourceTree = "<group>"; };
+		E6EB7DF01F43F46200DCB54E /* NewsSpellEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsSpellEvent.h; sourceTree = "<group>"; };
+		E6EB7DF11F43F46200DCB54E /* NewsSpellEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsSpellEvent.m; sourceTree = "<group>"; };
+		E6EB7DF21F43F46200DCB54E /* NewsThieveryEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsThieveryEvent.h; sourceTree = "<group>"; };
+		E6EB7DF31F43F46200DCB54E /* NewsThieveryEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsThieveryEvent.m; sourceTree = "<group>"; };
+		E6EB7DF41F43F46200DCB54E /* NotificationMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationMaker.h; sourceTree = "<group>"; };
+		E6EB7DF51F43F46200DCB54E /* NotificationMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationMaker.m; sourceTree = "<group>"; };
+		E6EB7DF71F43F46200DCB54E /* HtmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlParser.h; sourceTree = "<group>"; };
+		E6EB7DF81F43F46200DCB54E /* HtmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlParser.m; sourceTree = "<group>"; };
+		E6EB7DF91F43F46200DCB54E /* JsoupHtmlParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsoupHtmlParser.h; sourceTree = "<group>"; };
+		E6EB7DFA1F43F46200DCB54E /* JsoupHtmlParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsoupHtmlParser.m; sourceTree = "<group>"; };
+		E6EB7DFB1F43F46200DCB54E /* UtopiaParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopiaParser.h; sourceTree = "<group>"; };
+		E6EB7DFC1F43F46200DCB54E /* UtopiaParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopiaParser.m; sourceTree = "<group>"; };
+		E6EB7DFD1F43F46200DCB54E /* PrivateMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrivateMessage.h; sourceTree = "<group>"; };
+		E6EB7DFE1F43F46200DCB54E /* PrivateMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrivateMessage.m; sourceTree = "<group>"; };
+		E6EB7DFF1F43F46200DCB54E /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		E6EB7E001F43F46200DCB54E /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
+		E6EB7E011F43F46200DCB54E /* ProvinceCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceCredentials.h; sourceTree = "<group>"; };
+		E6EB7E021F43F46200DCB54E /* ProvinceCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceCredentials.m; sourceTree = "<group>"; };
+		E6EB7E031F43F46200DCB54E /* ProvinceTagUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProvinceTagUtil.h; sourceTree = "<group>"; };
+		E6EB7E041F43F46200DCB54E /* ProvinceTagUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProvinceTagUtil.m; sourceTree = "<group>"; };
+		E6EB7E051F43F46200DCB54E /* Science.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Science.h; sourceTree = "<group>"; };
+		E6EB7E061F43F46200DCB54E /* Science.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Science.m; sourceTree = "<group>"; };
+		E6EB7E071F43F46200DCB54E /* Scientist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scientist.h; sourceTree = "<group>"; };
+		E6EB7E081F43F46200DCB54E /* Scientist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Scientist.m; sourceTree = "<group>"; };
+		E6EB7E091F43F46200DCB54E /* Session.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Session.h; sourceTree = "<group>"; };
+		E6EB7E0A1F43F46200DCB54E /* Session.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Session.m; sourceTree = "<group>"; };
+		E6EB7E0B1F43F46200DCB54E /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
+		E6EB7E0C1F43F46200DCB54E /* Settings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Settings.m; sourceTree = "<group>"; };
+		E6EB7E0D1F43F46200DCB54E /* Spell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spell.h; sourceTree = "<group>"; };
+		E6EB7E0E1F43F46200DCB54E /* Spell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spell.m; sourceTree = "<group>"; };
+		E6EB7E0F1F43F46200DCB54E /* ThieveryOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThieveryOperation.h; sourceTree = "<group>"; };
+		E6EB7E101F43F46200DCB54E /* ThieveryOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThieveryOperation.m; sourceTree = "<group>"; };
+		E6EB7E111F43F46200DCB54E /* TrainArmyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainArmyData.h; sourceTree = "<group>"; };
+		E6EB7E121F43F46200DCB54E /* TrainArmyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainArmyData.m; sourceTree = "<group>"; };
+		E6EB7E141F43F46200DCB54E /* Base64Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Util.h; sourceTree = "<group>"; };
+		E6EB7E151F43F46200DCB54E /* Base64Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64Util.m; sourceTree = "<group>"; };
+		E6EB7E161F43F46200DCB54E /* BuildVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuildVersion.h; sourceTree = "<group>"; };
+		E6EB7E171F43F46200DCB54E /* BuildVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuildVersion.m; sourceTree = "<group>"; };
+		E6EB7E181F43F46200DCB54E /* JavaScriptExecutor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JavaScriptExecutor.h; sourceTree = "<group>"; };
+		E6EB7E191F43F46200DCB54E /* JavaScriptExecutor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JavaScriptExecutor.m; sourceTree = "<group>"; };
+		E6EB7E1A1F43F46200DCB54E /* UtopiaCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopiaCache.h; sourceTree = "<group>"; };
+		E6EB7E1B1F43F46200DCB54E /* UtopiaCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopiaCache.m; sourceTree = "<group>"; };
+		E6EB7E1C1F43F46200DCB54E /* UtopiaUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UtopiaUtil.h; sourceTree = "<group>"; };
+		E6EB7E1D1F43F46200DCB54E /* UtopiaUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UtopiaUtil.m; sourceTree = "<group>"; };
+		E6EB7E1E1F43F46200DCB54E /* Vibrator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vibrator.h; sourceTree = "<group>"; };
+		E6EB7E1F1F43F46200DCB54E /* Vibrator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vibrator.m; sourceTree = "<group>"; };
+		E6EB7E221F43F46200DCB54E /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		E6EB7E231F43F46200DCB54E /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		E6EB7E251F43F46200DCB54E /* HtmlToPlainText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlToPlainText.h; sourceTree = "<group>"; };
+		E6EB7E261F43F46200DCB54E /* HtmlToPlainText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlToPlainText.m; sourceTree = "<group>"; };
+		E6EB7E271F43F46200DCB54E /* ListLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLinks.h; sourceTree = "<group>"; };
+		E6EB7E281F43F46200DCB54E /* ListLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLinks.m; sourceTree = "<group>"; };
+		E6EB7E291F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E2A1F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E2C1F43F46200DCB54E /* ChangeNotifyingArrayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChangeNotifyingArrayList.h; sourceTree = "<group>"; };
+		E6EB7E2D1F43F46200DCB54E /* ChangeNotifyingArrayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChangeNotifyingArrayList.m; sourceTree = "<group>"; };
+		E6EB7E2E1F43F46200DCB54E /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		E6EB7E2F1F43F46200DCB54E /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		E6EB7E301F43F46200DCB54E /* HttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpConnection.h; sourceTree = "<group>"; };
+		E6EB7E311F43F46200DCB54E /* HttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpConnection.m; sourceTree = "<group>"; };
+		E6EB7E321F43F46200DCB54E /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		E6EB7E331F43F46200DCB54E /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		E6EB7E341F43F46200DCB54E /* Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate.h; sourceTree = "<group>"; };
+		E6EB7E351F43F46200DCB54E /* Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate.m; sourceTree = "<group>"; };
+		E6EB7E361F43F46200DCB54E /* W3CDom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W3CDom.h; sourceTree = "<group>"; };
+		E6EB7E371F43F46200DCB54E /* W3CDom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W3CDom.m; sourceTree = "<group>"; };
+		E6EB7E381F43F46200DCB54E /* HttpStatusException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStatusException.h; sourceTree = "<group>"; };
+		E6EB7E391F43F46200DCB54E /* HttpStatusException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpStatusException.m; sourceTree = "<group>"; };
+		E6EB7E3B1F43F46200DCB54E /* ConstrainableInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstrainableInputStream.h; sourceTree = "<group>"; };
+		E6EB7E3C1F43F46200DCB54E /* ConstrainableInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstrainableInputStream.m; sourceTree = "<group>"; };
+		E6EB7E3D1F43F46200DCB54E /* Normalizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Normalizer.h; sourceTree = "<group>"; };
+		E6EB7E3E1F43F46200DCB54E /* Normalizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Normalizer.m; sourceTree = "<group>"; };
+		E6EB7E3F1F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E401F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E411F43F46200DCB54E /* Jsoup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jsoup.h; sourceTree = "<group>"; };
+		E6EB7E421F43F46200DCB54E /* Jsoup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jsoup.m; sourceTree = "<group>"; };
+		E6EB7E441F43F46200DCB54E /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		E6EB7E451F43F46200DCB54E /* Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
+		E6EB7E461F43F46200DCB54E /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		E6EB7E471F43F46200DCB54E /* Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attributes.m; sourceTree = "<group>"; };
+		E6EB7E481F43F46200DCB54E /* BooleanAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanAttribute.h; sourceTree = "<group>"; };
+		E6EB7E491F43F46200DCB54E /* BooleanAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanAttribute.m; sourceTree = "<group>"; };
+		E6EB7E4A1F43F46200DCB54E /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		E6EB7E4B1F43F46200DCB54E /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		E6EB7E4C1F43F46200DCB54E /* DataNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataNode.h; sourceTree = "<group>"; };
+		E6EB7E4D1F43F46200DCB54E /* DataNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataNode.m; sourceTree = "<group>"; };
+		E6EB7E4E1F43F46200DCB54E /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		E6EB7E4F1F43F46200DCB54E /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		E6EB7E501F43F46200DCB54E /* DocumentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentType.h; sourceTree = "<group>"; };
+		E6EB7E511F43F46200DCB54E /* DocumentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentType.m; sourceTree = "<group>"; };
+		E6EB7E521F43F46200DCB54E /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		E6EB7E531F43F46200DCB54E /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		E6EB7E541F43F46200DCB54E /* Entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
+		E6EB7E551F43F46200DCB54E /* Entities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entities.m; sourceTree = "<group>"; };
+		E6EB7E561F43F46200DCB54E /* FormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormElement.h; sourceTree = "<group>"; };
+		E6EB7E571F43F46200DCB54E /* FormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormElement.m; sourceTree = "<group>"; };
+		E6EB7E581F43F46200DCB54E /* LeafNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeafNode.h; sourceTree = "<group>"; };
+		E6EB7E591F43F46200DCB54E /* LeafNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeafNode.m; sourceTree = "<group>"; };
+		E6EB7E5A1F43F46200DCB54E /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		E6EB7E5B1F43F46200DCB54E /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		E6EB7E5C1F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E5D1F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E5E1F43F46200DCB54E /* TextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextNode.h; sourceTree = "<group>"; };
+		E6EB7E5F1F43F46200DCB54E /* TextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextNode.m; sourceTree = "<group>"; };
+		E6EB7E601F43F46200DCB54E /* XmlDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlDeclaration.h; sourceTree = "<group>"; };
+		E6EB7E611F43F46200DCB54E /* XmlDeclaration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlDeclaration.m; sourceTree = "<group>"; };
+		E6EB7E621F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E631F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E651F43F46200DCB54E /* CharacterReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterReader.h; sourceTree = "<group>"; };
+		E6EB7E661F43F46200DCB54E /* CharacterReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterReader.m; sourceTree = "<group>"; };
+		E6EB7E671F43F46200DCB54E /* HtmlTreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlTreeBuilder.h; sourceTree = "<group>"; };
+		E6EB7E681F43F46200DCB54E /* HtmlTreeBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlTreeBuilder.m; sourceTree = "<group>"; };
+		E6EB7E691F43F46200DCB54E /* HtmlTreeBuilderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlTreeBuilderState.h; sourceTree = "<group>"; };
+		E6EB7E6A1F43F46200DCB54E /* HtmlTreeBuilderState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlTreeBuilderState.m; sourceTree = "<group>"; };
+		E6EB7E6B1F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E6C1F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E6D1F43F46200DCB54E /* ParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseError.h; sourceTree = "<group>"; };
+		E6EB7E6E1F43F46200DCB54E /* ParseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseError.m; sourceTree = "<group>"; };
+		E6EB7E6F1F43F46200DCB54E /* ParseErrorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseErrorList.h; sourceTree = "<group>"; };
+		E6EB7E701F43F46200DCB54E /* ParseErrorList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseErrorList.m; sourceTree = "<group>"; };
+		E6EB7E711F43F46200DCB54E /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		E6EB7E721F43F46200DCB54E /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		E6EB7E731F43F46200DCB54E /* ParseSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseSettings.h; sourceTree = "<group>"; };
+		E6EB7E741F43F46200DCB54E /* ParseSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseSettings.m; sourceTree = "<group>"; };
+		E6EB7E751F43F46200DCB54E /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		E6EB7E761F43F46200DCB54E /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		E6EB7E771F43F46200DCB54E /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		E6EB7E781F43F46200DCB54E /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Token.m; sourceTree = "<group>"; };
+		E6EB7E791F43F46200DCB54E /* Tokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tokeniser.h; sourceTree = "<group>"; };
+		E6EB7E7A1F43F46200DCB54E /* Tokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tokeniser.m; sourceTree = "<group>"; };
+		E6EB7E7B1F43F46200DCB54E /* TokeniserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokeniserState.h; sourceTree = "<group>"; };
+		E6EB7E7C1F43F46200DCB54E /* TokeniserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokeniserState.m; sourceTree = "<group>"; };
+		E6EB7E7D1F43F46200DCB54E /* TokenQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenQueue.h; sourceTree = "<group>"; };
+		E6EB7E7E1F43F46200DCB54E /* TokenQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenQueue.m; sourceTree = "<group>"; };
+		E6EB7E7F1F43F46200DCB54E /* TreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeBuilder.h; sourceTree = "<group>"; };
+		E6EB7E801F43F46200DCB54E /* TreeBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeBuilder.m; sourceTree = "<group>"; };
+		E6EB7E811F43F46200DCB54E /* XmlTreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlTreeBuilder.h; sourceTree = "<group>"; };
+		E6EB7E821F43F46200DCB54E /* XmlTreeBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlTreeBuilder.m; sourceTree = "<group>"; };
+		E6EB7E841F43F46200DCB54E /* Cleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cleaner.h; sourceTree = "<group>"; };
+		E6EB7E851F43F46200DCB54E /* Cleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cleaner.m; sourceTree = "<group>"; };
+		E6EB7E861F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E871F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E881F43F46200DCB54E /* Whitelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whitelist.h; sourceTree = "<group>"; };
+		E6EB7E891F43F46200DCB54E /* Whitelist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Whitelist.m; sourceTree = "<group>"; };
+		E6EB7E8B1F43F46200DCB54E /* Collector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collector.h; sourceTree = "<group>"; };
+		E6EB7E8C1F43F46200DCB54E /* Collector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collector.m; sourceTree = "<group>"; };
+		E6EB7E8D1F43F46200DCB54E /* CombiningEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombiningEvaluator.h; sourceTree = "<group>"; };
+		E6EB7E8E1F43F46200DCB54E /* CombiningEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiningEvaluator.m; sourceTree = "<group>"; };
+		E6EB7E8F1F43F46200DCB54E /* Elements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
+		E6EB7E901F43F46200DCB54E /* Elements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elements.m; sourceTree = "<group>"; };
+		E6EB7E911F43F46200DCB54E /* Evaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evaluator.h; sourceTree = "<group>"; };
+		E6EB7E921F43F46200DCB54E /* Evaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evaluator.m; sourceTree = "<group>"; };
+		E6EB7E931F43F46200DCB54E /* NodeTraversor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeTraversor.h; sourceTree = "<group>"; };
+		E6EB7E941F43F46200DCB54E /* NodeTraversor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeTraversor.m; sourceTree = "<group>"; };
+		E6EB7E951F43F46200DCB54E /* NodeVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeVisitor.h; sourceTree = "<group>"; };
+		E6EB7E961F43F46200DCB54E /* NodeVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeVisitor.m; sourceTree = "<group>"; };
+		E6EB7E971F43F46200DCB54E /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		E6EB7E981F43F46200DCB54E /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		E6EB7E991F43F46200DCB54E /* QueryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryParser.h; sourceTree = "<group>"; };
+		E6EB7E9A1F43F46200DCB54E /* QueryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryParser.m; sourceTree = "<group>"; };
+		E6EB7E9B1F43F46200DCB54E /* Selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selector.h; sourceTree = "<group>"; };
+		E6EB7E9C1F43F46200DCB54E /* Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selector.m; sourceTree = "<group>"; };
+		E6EB7E9D1F43F46200DCB54E /* StructuralEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructuralEvaluator.h; sourceTree = "<group>"; };
+		E6EB7E9E1F43F46200DCB54E /* StructuralEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructuralEvaluator.m; sourceTree = "<group>"; };
+		E6EB7E9F1F43F46200DCB54E /* SerializationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializationException.h; sourceTree = "<group>"; };
+		E6EB7EA01F43F46200DCB54E /* SerializationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializationException.m; sourceTree = "<group>"; };
+		E6EB7EA11F43F46200DCB54E /* UncheckedIOException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UncheckedIOException.h; sourceTree = "<group>"; };
+		E6EB7EA21F43F46200DCB54E /* UncheckedIOException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UncheckedIOException.m; sourceTree = "<group>"; };
+		E6EB7EA31F43F46200DCB54E /* UnsupportedMimeTypeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsupportedMimeTypeException.h; sourceTree = "<group>"; };
+		E6EB7EA41F43F46200DCB54E /* UnsupportedMimeTypeException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsupportedMimeTypeException.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E6A8ACD61CFD147F0094C15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6DDA7771D039AE1009B1099 /* libsqlite3.tbd in Frameworks */,
+				E6A8ADA01CFD42DB0094C15F /* Security.framework in Frameworks */,
+				E6A8AD9F1CFD42C20094C15F /* libz.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8ACEA1CFD147F0094C15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8ACF51CFD147F0094C15F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E60649891D051360005BC45B /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				E6A8ACE01CFD147F0094C15F /* Main.storyboard */,
+				E6DDA7741D038586009B1099 /* NavigationController.swift */,
+				E606498B1D051398005BC45B /* ProvinceTabController.swift */,
+				E65B675C1D261AE20061FCCB /* RefreshControl.swift */,
+				E63D85881D6CB09400581A4C /* SpellCellFactory.swift */,
+				E6AC3AB01D1744D90066A438 /* UiTheme.swift */,
+				E6D211F41D26020300FC0E35 /* WebViewDelegate.swift */,
+				E6D801781D1F9BD800EF2223 /* adapters */,
+				E6AC3AB41D1AE1F80066A438 /* dialogs */,
+				E6D801711D1B97EE00EF2223 /* utils */,
+				E606498A1D051373005BC45B /* view-controllers */,
+			);
+			name = ui;
+			sourceTree = "<group>";
+		};
+		E606498A1D051373005BC45B /* view-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6D801841D20838300EF2223 /* DefensiveSpellsController.swift */,
+				E6D8019F1D2365CE00EF2223 /* KingdomChatController.swift */,
+				E607998E1D62963A00C90CED /* KingdomController.swift */,
+				E6A8ACDE1CFD147F0094C15F /* LoginViewController.swift */,
+				E6638AEB1D275F1300FF5444 /* ProvinceNewsController.swift */,
+				E6DDA7721D035547009B1099 /* ThroneViewController.swift */,
+				E6A1A6661D6A0742002DF8AD /* ReadOnlyThroneViewController.swift */,
+				E6A1A6681D6AA949002DF8AD /* OffensiveSpellsController.swift */,
+				E6D8017F1D207E5900EF2223 /* defensive-spells-item */,
+				E6E8DBD71D448805002671BB /* deployed-army-item */,
+				E6A02E161D5C10E30014F1B6 /* intel-controllers */,
+				E6D801A31D2366EC00EF2223 /* kingcom-chat-item */,
+				E670DE6F1D64E284006665EB /* kingdom-province-item */,
+				E6638AED1D2761B200FF5444 /* province-news-item */,
+				E6638AFA1D28B58E00FF5444 /* province-tag-item */,
+			);
+			name = "view-controllers";
+			sourceTree = "<group>";
+		};
+		E657D4231D49B74100710E02 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E657D4241D49B75000710E02 /* IosJavaScriptExecutor.swift */,
+				E657D4261D49B77500710E02 /* IosBase64Util.swift */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
+		E657D42A1D49B91B00710E02 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				E657D4281D49B91500710E02 /* upoopu_lib.js */,
+			);
+			name = resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E6625B7C1D4BC08900EBD992 /* intel-sync */ = {
+			isa = PBXGroup;
+			children = (
+				E657D2601D4711AE00710E02 /* UpoopuIntelSync.swift */,
+				E64845411D57EE6F00C0371F /* VerdeIntelSync.swift */,
+				E6A02E211D5C35190014F1B6 /* UmunkIntelSync.swift */,
+				E6A02E231D5C36CF0014F1B6 /* StingerIntelSync.swift */,
+			);
+			name = "intel-sync";
+			sourceTree = "<group>";
+		};
+		E6638AED1D2761B200FF5444 /* province-news-item */ = {
+			isa = PBXGroup;
+			children = (
+				E6638AF01D2764D800FF5444 /* ProvinceNewsCell.swift */,
+				E6638AEE1D2761F200FF5444 /* ProvinceNewsCell.xib */,
+			);
+			name = "province-news-item";
+			sourceTree = "<group>";
+		};
+		E6638AFA1D28B58E00FF5444 /* province-tag-item */ = {
+			isa = PBXGroup;
+			children = (
+				E6638AFD1D28B63200FF5444 /* ProvinceTagCell.swift */,
+				E6638AFB1D28B5B400FF5444 /* ProvinceTagCell.xib */,
+			);
+			name = "province-tag-item";
+			sourceTree = "<group>";
+		};
+		E670DE6F1D64E284006665EB /* kingdom-province-item */ = {
+			isa = PBXGroup;
+			children = (
+				E670DE721D64E2FC006665EB /* KingdomProvinceCell.swift */,
+				E670DE701D64E2A3006665EB /* KingdomProvinceCell.xib */,
+			);
+			name = "kingdom-province-item";
+			sourceTree = "<group>";
+		};
+		E6A02E161D5C10E30014F1B6 /* intel-controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E6A02E171D5C10F80014F1B6 /* GenericIntelController.swift */,
+				E657D25E1D470DD500710E02 /* IntelSyncController.swift */,
+				E6A02E1F1D5C22D70014F1B6 /* StingerIntelController.swift */,
+				E6A02E1D1D5C229E0014F1B6 /* UmunkIntelController.swift */,
+				E6A02E191D5C12080014F1B6 /* UpoopuIntelController.swift */,
+				E6A02E1B1D5C182B0014F1B6 /* VerdeIntelController.swift */,
+			);
+			name = "intel-controllers";
+			sourceTree = "<group>";
+		};
+		E6A8ACD01CFD147F0094C15F = {
+			isa = PBXGroup;
+			children = (
+				E6DDA76F1D035270009B1099 /* application */,
+				E6DDA5B81CFFEA36009B1099 /* libraries */,
+				E6A8ACDA1CFD147F0094C15F /* products */,
+				E6A8ACDB1CFD147F0094C15F /* utopia */,
+				E6A8ACF01CFD147F0094C15F /* utopia-tests */,
+				E6A8ACFB1CFD147F0094C15F /* utopia-ui-tests */,
+			);
+			sourceTree = "<group>";
+		};
+		E6A8ACDA1CFD147F0094C15F /* products */ = {
+			isa = PBXGroup;
+			children = (
+				E6A8ACD91CFD147F0094C15F /* Utopia.app */,
+				E6A8ACED1CFD147F0094C15F /* UtopiaTests.xctest */,
+				E6A8ACF81CFD147F0094C15F /* UtopiaUITests.xctest */,
+			);
+			name = products;
+			sourceTree = "<group>";
+		};
+		E6A8ACDB1CFD147F0094C15F /* utopia */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D471F43F46200DCB54E /* java */,
+				E6DDA76E1D02A0C5009B1099 /* java-adapters */,
+				E6DDA5B71CFFE9E9009B1099 /* java-resources */,
+				E60649891D051360005BC45B /* ui */,
+				E657D4231D49B74100710E02 /* util */,
+				E63D85861D6CB06700581A4C /* CastableSpell.swift */,
+			);
+			name = utopia;
+			path = Utopia;
+			sourceTree = "<group>";
+		};
+		E6A8ACF01CFD147F0094C15F /* utopia-tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6A8ACF31CFD147F0094C15F /* Info.plist */,
+				E6A8ACF11CFD147F0094C15F /* UtopiaTests.swift */,
+			);
+			name = "utopia-tests";
+			path = UtopiaTests;
+			sourceTree = "<group>";
+		};
+		E6A8ACFB1CFD147F0094C15F /* utopia-ui-tests */ = {
+			isa = PBXGroup;
+			children = (
+				E6A8ACFE1CFD147F0094C15F /* Info.plist */,
+				E6A8ACFC1CFD147F0094C15F /* UtopiaUITests.swift */,
+			);
+			name = "utopia-ui-tests";
+			path = UtopiaUITests;
+			sourceTree = "<group>";
+		};
+		E6AC3AB41D1AE1F80066A438 /* dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC3AB51D1AE2160066A438 /* Dialogs.storyboard */,
+				E6D8019B1D22271400EF2223 /* CastSpellDialog.swift */,
+				E6D801761D1F985700EF2223 /* DraftRateDialog.swift */,
+				E6638AE91D26D4F300FF5444 /* LoadingDialog.swift */,
+				E6D801741D1F14DE00EF2223 /* MilitaryWagesDialog.swift */,
+				E6AC3AB71D1B03500066A438 /* TrainUnitsDialog.swift */,
+				E6638AE71D26D41500FF5444 /* LoadingDialog.xib */,
+			);
+			name = dialogs;
+			sourceTree = "<group>";
+		};
+		E6D801711D1B97EE00EF2223 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				E6AC3AAC1D122C820066A438 /* Util.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		E6D801781D1F9BD800EF2223 /* adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E60799901D629A4800C90CED /* CollectionAdapter.swift */,
+				E60799921D629F6C00C90CED /* CollectionViewCell.swift */,
+				E6D8017D1D1F9E1400EF2223 /* DefaultPickerViewItem.swift */,
+				E6D801791D1F9BE200EF2223 /* PickerViewAdapter.swift */,
+				E6D801861D20845600EF2223 /* TableViewAdapter.swift */,
+				E6D8018C1D208BCA00EF2223 /* TableViewCell.swift */,
+				E60799941D629FB700C90CED /* CollectionViewCell.xib */,
+				E6D8017B1D1F9D9200EF2223 /* DefaultPickerViewItem.xib */,
+				E6D8018D1D208BCA00EF2223 /* TableViewCell.xib */,
+			);
+			name = adapters;
+			sourceTree = "<group>";
+		};
+		E6D8017F1D207E5900EF2223 /* defensive-spells-item */ = {
+			isa = PBXGroup;
+			children = (
+				E6D801821D2080F100EF2223 /* SpellTableViewCell.swift */,
+				E6D801801D207E9500EF2223 /* SpellTableViewCell.xib */,
+			);
+			name = "defensive-spells-item";
+			sourceTree = "<group>";
+		};
+		E6D801A31D2366EC00EF2223 /* kingcom-chat-item */ = {
+			isa = PBXGroup;
+			children = (
+				E6D801A61D236B1600EF2223 /* ChatroomMessageCell.swift */,
+				E6D801A41D236A3C00EF2223 /* ChatroomMessageCell.xib */,
+			);
+			name = "kingcom-chat-item";
+			sourceTree = "<group>";
+		};
+		E6DDA5B71CFFE9E9009B1099 /* java-resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6DDA5B51CFFE9D4009B1099 /* org */,
+			);
+			name = "java-resources";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		E6DDA5B81CFFEA36009B1099 /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+				E6A8AD541CFD2AB00094C15F /* Security.framework */,
+				E6DDA7761D039AE1009B1099 /* libsqlite3.tbd */,
+				E6A8AD9D1CFD42AF0094C15F /* libz.1.2.5.tbd */,
+				E6A8AD521CFD2AA60094C15F /* libz.tbd */,
+			);
+			name = libraries;
+			sourceTree = "<group>";
+		};
+		E6DDA76E1D02A0C5009B1099 /* java-adapters */ = {
+			isa = PBXGroup;
+			children = (
+				E6D211F01D25528000FC0E35 /* AutomaticApnsTokenRegistrar.swift */,
+				E6C1ED151D4C549900CA088D /* BadAccessType.swift */,
+				E6D801921D21FE2800EF2223 /* Building.swift */,
+				E6625B7D1D4BC39C00EBD992 /* BuildVersion.swift */,
+				E6D801A11D23663300EF2223 /* ChatroomMessage.swift */,
+				E6E8DBDC1D448CDD002671BB /* DeployedArmy.swift */,
+				E6AC3AAE1D123A0F0066A438 /* DraftRate.swift */,
+				E657D4211D49B48B00710E02 /* IntelSyncFactory.swift */,
+				E657D41F1D49AF2C00710E02 /* IntelSyncType.swift */,
+				E6DDA7681D0298EC009B1099 /* IosDatabase.swift */,
+				E6DDA7781D046852009B1099 /* IosKeyValueStore.swift */,
+				E6638AF81D28AE4000FF5444 /* JavaUtil.swift */,
+				E6638AF41D28AB3A00FF5444 /* Kingdom.swift */,
+				E6D211F21D255B9200FC0E35 /* KingdomIdentifier.swift */,
+				E6DDA76A1D02A032009B1099 /* NotificationMaker.swift */,
+				E606498D1D052ACC005BC45B /* Province.swift */,
+				E6638AF21D2767A400FF5444 /* ProvinceNews.swift */,
+				E6AC3AB21D17476E0066A438 /* Race.swift */,
+				E6DDA7701D035305009B1099 /* Session.swift */,
+				E6D801901D2099DB00EF2223 /* Spell.swift */,
+				E6D8019D1D234C6F00EF2223 /* SpellResult.swift */,
+				E6D801721D1CCF0A00EF2223 /* TrainArmyData.swift */,
+				E6638AF61D28AD1100FF5444 /* UtopiaTagUtil.swift */,
+				E6DDA76C1D02A098009B1099 /* Vibrator.swift */,
+				E6D211EE1D24B6C500FC0E35 /* WebRequest.swift */,
+				E6625B7C1D4BC08900EBD992 /* intel-sync */,
+				E6BA9F5B1D6D273200284CD9 /* UtopiaUtil.swift */,
+			);
+			name = "java-adapters";
+			sourceTree = "<group>";
+		};
+		E6DDA76F1D035270009B1099 /* application */ = {
+			isa = PBXGroup;
+			children = (
+				E6A8AD851CFD33060094C15F /* Utopia-Bridging-Header.h */,
+				E6A8ACE81CFD147F0094C15F /* Info.plist */,
+				E6A8ACDC1CFD147F0094C15F /* AppDelegate.swift */,
+				E6A8ACE31CFD147F0094C15F /* Assets.xcassets */,
+				E657D42A1D49B91B00710E02 /* resources */,
+			);
+			name = application;
+			path = Utopia;
+			sourceTree = "<group>";
+		};
+		E6E8DBD71D448805002671BB /* deployed-army-item */ = {
+			isa = PBXGroup;
+			children = (
+				E6E8DBDA1D448ACA002671BB /* DeployedArmyTableViewCell.swift */,
+				E6E8DBD81D44881B002671BB /* DeployedArmyTableViewCell.xib */,
+			);
+			name = "deployed-army-item";
+			sourceTree = "<group>";
+		};
+		E6EB7D471F43F46200DCB54E /* java */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D481F43F46200DCB54E /* com */,
+				E6EB7E201F43F46200DCB54E /* org */,
+			);
+			path = java;
+			sourceTree = "<group>";
+		};
+		E6EB7D481F43F46200DCB54E /* com */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D491F43F46200DCB54E /* softwareverde */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		E6EB7D491F43F46200DCB54E /* softwareverde */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D4A1F43F46200DCB54E /* util */,
+				E6EB7D551F43F46200DCB54E /* utopia */,
+			);
+			path = softwareverde;
+			sourceTree = "<group>";
+		};
+		E6EB7D4A1F43F46200DCB54E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D4B1F43F46200DCB54E /* Json.h */,
+				E6EB7D4C1F43F46200DCB54E /* Json.m */,
+				E6EB7D4D1F43F46200DCB54E /* Jsonable.h */,
+				E6EB7D4E1F43F46200DCB54E /* Jsonable.m */,
+				E6EB7D4F1F43F46200DCB54E /* Util.h */,
+				E6EB7D501F43F46200DCB54E /* Util.m */,
+				E6EB7D511F43F46200DCB54E /* WebRequest.h */,
+				E6EB7D521F43F46200DCB54E /* WebRequest.m */,
+				E6EB7D531F43F46200DCB54E /* WebRequestSynchronizer.h */,
+				E6EB7D541F43F46200DCB54E /* WebRequestSynchronizer.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E6EB7D551F43F46200DCB54E /* utopia */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D561F43F46200DCB54E /* ActiveSpell.h */,
+				E6EB7D571F43F46200DCB54E /* ActiveSpell.m */,
+				E6EB7D581F43F46200DCB54E /* Building.h */,
+				E6EB7D591F43F46200DCB54E /* Building.m */,
+				E6EB7D5A1F43F46200DCB54E /* bundle */,
+				E6EB7DC31F43F46200DCB54E /* ChatCredentials.h */,
+				E6EB7DC41F43F46200DCB54E /* ChatCredentials.m */,
+				E6EB7DC51F43F46200DCB54E /* Chatroom.h */,
+				E6EB7DC61F43F46200DCB54E /* Chatroom.m */,
+				E6EB7DC71F43F46200DCB54E /* database */,
+				E6EB7DD01F43F46200DCB54E /* DraftRate.h */,
+				E6EB7DD11F43F46200DCB54E /* DraftRate.m */,
+				E6EB7DD21F43F46200DCB54E /* Dragon.h */,
+				E6EB7DD31F43F46200DCB54E /* Dragon.m */,
+				E6EB7DD41F43F46200DCB54E /* Forum.h */,
+				E6EB7DD51F43F46200DCB54E /* Forum.m */,
+				E6EB7DD61F43F46200DCB54E /* HostilityMeter.h */,
+				E6EB7DD71F43F46200DCB54E /* HostilityMeter.m */,
+				E6EB7DD81F43F46200DCB54E /* intelsync */,
+				E6EB7DE71F43F46200DCB54E /* Kingdom.h */,
+				E6EB7DE81F43F46200DCB54E /* Kingdom.m */,
+				E6EB7DE91F43F46200DCB54E /* news */,
+				E6EB7DF41F43F46200DCB54E /* NotificationMaker.h */,
+				E6EB7DF51F43F46200DCB54E /* NotificationMaker.m */,
+				E6EB7DF61F43F46200DCB54E /* parser */,
+				E6EB7DFD1F43F46200DCB54E /* PrivateMessage.h */,
+				E6EB7DFE1F43F46200DCB54E /* PrivateMessage.m */,
+				E6EB7DFF1F43F46200DCB54E /* Province.h */,
+				E6EB7E001F43F46200DCB54E /* Province.m */,
+				E6EB7E011F43F46200DCB54E /* ProvinceCredentials.h */,
+				E6EB7E021F43F46200DCB54E /* ProvinceCredentials.m */,
+				E6EB7E031F43F46200DCB54E /* ProvinceTagUtil.h */,
+				E6EB7E041F43F46200DCB54E /* ProvinceTagUtil.m */,
+				E6EB7E051F43F46200DCB54E /* Science.h */,
+				E6EB7E061F43F46200DCB54E /* Science.m */,
+				E6EB7E071F43F46200DCB54E /* Scientist.h */,
+				E6EB7E081F43F46200DCB54E /* Scientist.m */,
+				E6EB7E091F43F46200DCB54E /* Session.h */,
+				E6EB7E0A1F43F46200DCB54E /* Session.m */,
+				E6EB7E0B1F43F46200DCB54E /* Settings.h */,
+				E6EB7E0C1F43F46200DCB54E /* Settings.m */,
+				E6EB7E0D1F43F46200DCB54E /* Spell.h */,
+				E6EB7E0E1F43F46200DCB54E /* Spell.m */,
+				E6EB7E0F1F43F46200DCB54E /* ThieveryOperation.h */,
+				E6EB7E101F43F46200DCB54E /* ThieveryOperation.m */,
+				E6EB7E111F43F46200DCB54E /* TrainArmyData.h */,
+				E6EB7E121F43F46200DCB54E /* TrainArmyData.m */,
+				E6EB7E131F43F46200DCB54E /* util */,
+				E6EB7E1A1F43F46200DCB54E /* UtopiaCache.h */,
+				E6EB7E1B1F43F46200DCB54E /* UtopiaCache.m */,
+				E6EB7E1C1F43F46200DCB54E /* UtopiaUtil.h */,
+				E6EB7E1D1F43F46200DCB54E /* UtopiaUtil.m */,
+				E6EB7E1E1F43F46200DCB54E /* Vibrator.h */,
+				E6EB7E1F1F43F46200DCB54E /* Vibrator.m */,
+			);
+			path = utopia;
+			sourceTree = "<group>";
+		};
+		E6EB7D5A1F43F46200DCB54E /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7D5B1F43F46200DCB54E /* ActiveSpellBundle.h */,
+				E6EB7D5C1F43F46200DCB54E /* ActiveSpellBundle.m */,
+				E6EB7D5D1F43F46200DCB54E /* ActiveSpellsBundle.h */,
+				E6EB7D5E1F43F46200DCB54E /* ActiveSpellsBundle.m */,
+				E6EB7D5F1F43F46200DCB54E /* ArmyOffenseBundle.h */,
+				E6EB7D601F43F46200DCB54E /* ArmyOffenseBundle.m */,
+				E6EB7D611F43F46200DCB54E /* AttackBundle.h */,
+				E6EB7D621F43F46200DCB54E /* AttackBundle.m */,
+				E6EB7D631F43F46200DCB54E /* AttackDragonInfoBundle.h */,
+				E6EB7D641F43F46200DCB54E /* AttackDragonInfoBundle.m */,
+				E6EB7D651F43F46200DCB54E /* AvailableSpellsBundle.h */,
+				E6EB7D661F43F46200DCB54E /* AvailableSpellsBundle.m */,
+				E6EB7D671F43F46200DCB54E /* AvailableThieveryOperationBundle.h */,
+				E6EB7D681F43F46200DCB54E /* AvailableThieveryOperationBundle.m */,
+				E6EB7D691F43F46200DCB54E /* AvailableThieveryOperationsBundle.h */,
+				E6EB7D6A1F43F46200DCB54E /* AvailableThieveryOperationsBundle.m */,
+				E6EB7D6B1F43F46200DCB54E /* BuildCostBundle.h */,
+				E6EB7D6C1F43F46200DCB54E /* BuildCostBundle.m */,
+				E6EB7D6D1F43F46200DCB54E /* BuildingBundle.h */,
+				E6EB7D6E1F43F46200DCB54E /* BuildingBundle.m */,
+				E6EB7D6F1F43F46200DCB54E /* BuildingInProgressBundle.h */,
+				E6EB7D701F43F46200DCB54E /* BuildingInProgressBundle.m */,
+				E6EB7D711F43F46200DCB54E /* BuildingsBundle.h */,
+				E6EB7D721F43F46200DCB54E /* BuildingsBundle.m */,
+				E6EB7D731F43F46200DCB54E /* Bundle.h */,
+				E6EB7D741F43F46200DCB54E /* Bundle.m */,
+				E6EB7D751F43F46200DCB54E /* BundleFactory.h */,
+				E6EB7D761F43F46200DCB54E /* BundleFactory.m */,
+				E6EB7D771F43F46200DCB54E /* ChatMessageBundle.h */,
+				E6EB7D781F43F46200DCB54E /* ChatMessageBundle.m */,
+				E6EB7D791F43F46200DCB54E /* ChatroomBundle.h */,
+				E6EB7D7A1F43F46200DCB54E /* ChatroomBundle.m */,
+				E6EB7D7B1F43F46200DCB54E /* DeployedArmiesBundle.h */,
+				E6EB7D7C1F43F46200DCB54E /* DeployedArmiesBundle.m */,
+				E6EB7D7D1F43F46200DCB54E /* DeployedArmyBundle.h */,
+				E6EB7D7E1F43F46200DCB54E /* DeployedArmyBundle.m */,
+				E6EB7D7F1F43F46200DCB54E /* DraftRateBundle.h */,
+				E6EB7D801F43F46200DCB54E /* DraftRateBundle.m */,
+				E6EB7D811F43F46200DCB54E /* ExplorationCostsBundle.h */,
+				E6EB7D821F43F46200DCB54E /* ExplorationCostsBundle.m */,
+				E6EB7D831F43F46200DCB54E /* ForumTopicBundle.h */,
+				E6EB7D841F43F46200DCB54E /* ForumTopicBundle.m */,
+				E6EB7D851F43F46200DCB54E /* ForumTopicPostBundle.h */,
+				E6EB7D861F43F46200DCB54E /* ForumTopicPostBundle.m */,
+				E6EB7D871F43F46200DCB54E /* ForumTopicPostsBundle.h */,
+				E6EB7D881F43F46200DCB54E /* ForumTopicPostsBundle.m */,
+				E6EB7D891F43F46200DCB54E /* ForumTopicsBundle.h */,
+				E6EB7D8A1F43F46200DCB54E /* ForumTopicsBundle.m */,
+				E6EB7D8B1F43F46200DCB54E /* FundDragonInfoBundle.h */,
+				E6EB7D8C1F43F46200DCB54E /* FundDragonInfoBundle.m */,
+				E6EB7D8D1F43F46200DCB54E /* InfiltrateThievesBundle.h */,
+				E6EB7D8E1F43F46200DCB54E /* InfiltrateThievesBundle.m */,
+				E6EB7D8F1F43F46200DCB54E /* KingdomBundle.h */,
+				E6EB7D901F43F46200DCB54E /* KingdomBundle.m */,
+				E6EB7D911F43F46200DCB54E /* KingdomIntelBundle.h */,
+				E6EB7D921F43F46200DCB54E /* KingdomIntelBundle.m */,
+				E6EB7D931F43F46200DCB54E /* KingdomProvinceBundle.h */,
+				E6EB7D941F43F46200DCB54E /* KingdomProvinceBundle.m */,
+				E6EB7D951F43F46200DCB54E /* MilitaryBundle.h */,
+				E6EB7D961F43F46200DCB54E /* MilitaryBundle.m */,
+				E6EB7D971F43F46200DCB54E /* MilitaryInProgressBundle.h */,
+				E6EB7D981F43F46200DCB54E /* MilitaryInProgressBundle.m */,
+				E6EB7D991F43F46200DCB54E /* MilitarySettingsBundle.h */,
+				E6EB7D9A1F43F46200DCB54E /* MilitarySettingsBundle.m */,
+				E6EB7D9B1F43F46200DCB54E /* NewsBundle.h */,
+				E6EB7D9C1F43F46200DCB54E /* NewsBundle.m */,
+				E6EB7D9D1F43F46200DCB54E /* NewspaperBundle.h */,
+				E6EB7D9E1F43F46200DCB54E /* NewspaperBundle.m */,
+				E6EB7D9F1F43F46200DCB54E /* PrivateMessageBundle.h */,
+				E6EB7DA01F43F46200DCB54E /* PrivateMessageBundle.m */,
+				E6EB7DA11F43F46200DCB54E /* PrivateMessagesBundle.h */,
+				E6EB7DA21F43F46200DCB54E /* PrivateMessagesBundle.m */,
+				E6EB7DA31F43F46200DCB54E /* ProvinceIdBundle.h */,
+				E6EB7DA41F43F46200DCB54E /* ProvinceIdBundle.m */,
+				E6EB7DA51F43F46200DCB54E /* ProvinceIdsBundle.h */,
+				E6EB7DA61F43F46200DCB54E /* ProvinceIdsBundle.m */,
+				E6EB7DA71F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.h */,
+				E6EB7DA81F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.m */,
+				E6EB7DA91F43F46200DCB54E /* ProvinceIntelBundle.h */,
+				E6EB7DAA1F43F46200DCB54E /* ProvinceIntelBundle.m */,
+				E6EB7DAB1F43F46200DCB54E /* ScienceBundle.h */,
+				E6EB7DAC1F43F46200DCB54E /* ScienceBundle.m */,
+				E6EB7DAD1F43F46200DCB54E /* ScienceResultBundle.h */,
+				E6EB7DAE1F43F46200DCB54E /* ScienceResultBundle.m */,
+				E6EB7DAF1F43F46200DCB54E /* ScientistBundle.h */,
+				E6EB7DB01F43F46200DCB54E /* ScientistBundle.m */,
+				E6EB7DB11F43F46200DCB54E /* SendAidBundle.h */,
+				E6EB7DB21F43F46200DCB54E /* SendAidBundle.m */,
+				E6EB7DB31F43F46200DCB54E /* SpellBundle.h */,
+				E6EB7DB41F43F46200DCB54E /* SpellBundle.m */,
+				E6EB7DB51F43F46200DCB54E /* SpellResultBundle.h */,
+				E6EB7DB61F43F46200DCB54E /* SpellResultBundle.m */,
+				E6EB7DB71F43F46200DCB54E /* StateCouncilBundle.h */,
+				E6EB7DB81F43F46200DCB54E /* StateCouncilBundle.m */,
+				E6EB7DB91F43F46200DCB54E /* StateHistoryBundle.h */,
+				E6EB7DBA1F43F46200DCB54E /* StateHistoryBundle.m */,
+				E6EB7DBB1F43F46200DCB54E /* ThieveryOperationBundle.h */,
+				E6EB7DBC1F43F46200DCB54E /* ThieveryOperationBundle.m */,
+				E6EB7DBD1F43F46200DCB54E /* ThroneBundle.h */,
+				E6EB7DBE1F43F46200DCB54E /* ThroneBundle.m */,
+				E6EB7DBF1F43F46200DCB54E /* TradeSettingsBundle.h */,
+				E6EB7DC01F43F46200DCB54E /* TradeSettingsBundle.m */,
+				E6EB7DC11F43F46200DCB54E /* WarRoomBundle.h */,
+				E6EB7DC21F43F46200DCB54E /* WarRoomBundle.m */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		E6EB7DC71F43F46200DCB54E /* database */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7DC81F43F46200DCB54E /* Database.h */,
+				E6EB7DC91F43F46200DCB54E /* Database.m */,
+				E6EB7DCA1F43F46200DCB54E /* KeyValueStore.h */,
+				E6EB7DCB1F43F46200DCB54E /* KeyValueStore.m */,
+				E6EB7DCC1F43F46200DCB54E /* UtopiaDatabase.h */,
+				E6EB7DCD1F43F46200DCB54E /* UtopiaDatabase.m */,
+				E6EB7DCE1F43F46200DCB54E /* UtopiaDatabaseV1.h */,
+				E6EB7DCF1F43F46200DCB54E /* UtopiaDatabaseV1.m */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+		E6EB7DD81F43F46200DCB54E /* intelsync */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7DD91F43F46200DCB54E /* IntelSubmitter.h */,
+				E6EB7DDA1F43F46200DCB54E /* IntelSubmitter.m */,
+				E6EB7DDB1F43F46200DCB54E /* IntelSync.h */,
+				E6EB7DDC1F43F46200DCB54E /* IntelSync.m */,
+				E6EB7DDD1F43F46200DCB54E /* IntelSyncFactory.h */,
+				E6EB7DDE1F43F46200DCB54E /* IntelSyncFactory.m */,
+				E6EB7DDF1F43F46200DCB54E /* StingerUtil.h */,
+				E6EB7DE01F43F46200DCB54E /* StingerUtil.m */,
+				E6EB7DE11F43F46200DCB54E /* UmunkUtil.h */,
+				E6EB7DE21F43F46200DCB54E /* UmunkUtil.m */,
+				E6EB7DE31F43F46200DCB54E /* UpoopuUtil.h */,
+				E6EB7DE41F43F46200DCB54E /* UpoopuUtil.m */,
+				E6EB7DE51F43F46200DCB54E /* VerdeIntelUtil.h */,
+				E6EB7DE61F43F46200DCB54E /* VerdeIntelUtil.m */,
+			);
+			path = intelsync;
+			sourceTree = "<group>";
+		};
+		E6EB7DE91F43F46200DCB54E /* news */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7DEA1F43F46200DCB54E /* NewsAttackEvent.h */,
+				E6EB7DEB1F43F46200DCB54E /* NewsAttackEvent.m */,
+				E6EB7DEC1F43F46200DCB54E /* NewsEvent.h */,
+				E6EB7DED1F43F46200DCB54E /* NewsEvent.m */,
+				E6EB7DEE1F43F46200DCB54E /* NewsMiscEvent.h */,
+				E6EB7DEF1F43F46200DCB54E /* NewsMiscEvent.m */,
+				E6EB7DF01F43F46200DCB54E /* NewsSpellEvent.h */,
+				E6EB7DF11F43F46200DCB54E /* NewsSpellEvent.m */,
+				E6EB7DF21F43F46200DCB54E /* NewsThieveryEvent.h */,
+				E6EB7DF31F43F46200DCB54E /* NewsThieveryEvent.m */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		E6EB7DF61F43F46200DCB54E /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7DF71F43F46200DCB54E /* HtmlParser.h */,
+				E6EB7DF81F43F46200DCB54E /* HtmlParser.m */,
+				E6EB7DF91F43F46200DCB54E /* JsoupHtmlParser.h */,
+				E6EB7DFA1F43F46200DCB54E /* JsoupHtmlParser.m */,
+				E6EB7DFB1F43F46200DCB54E /* UtopiaParser.h */,
+				E6EB7DFC1F43F46200DCB54E /* UtopiaParser.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		E6EB7E131F43F46200DCB54E /* util */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E141F43F46200DCB54E /* Base64Util.h */,
+				E6EB7E151F43F46200DCB54E /* Base64Util.m */,
+				E6EB7E161F43F46200DCB54E /* BuildVersion.h */,
+				E6EB7E171F43F46200DCB54E /* BuildVersion.m */,
+				E6EB7E181F43F46200DCB54E /* JavaScriptExecutor.h */,
+				E6EB7E191F43F46200DCB54E /* JavaScriptExecutor.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		E6EB7E201F43F46200DCB54E /* org */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E211F43F46200DCB54E /* jsoup */,
+			);
+			path = org;
+			sourceTree = "<group>";
+		};
+		E6EB7E211F43F46200DCB54E /* jsoup */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E221F43F46200DCB54E /* Connection.h */,
+				E6EB7E231F43F46200DCB54E /* Connection.m */,
+				E6EB7E241F43F46200DCB54E /* examples */,
+				E6EB7E2B1F43F46200DCB54E /* helper */,
+				E6EB7E381F43F46200DCB54E /* HttpStatusException.h */,
+				E6EB7E391F43F46200DCB54E /* HttpStatusException.m */,
+				E6EB7E3A1F43F46200DCB54E /* internal */,
+				E6EB7E411F43F46200DCB54E /* Jsoup.h */,
+				E6EB7E421F43F46200DCB54E /* Jsoup.m */,
+				E6EB7E431F43F46200DCB54E /* nodes */,
+				E6EB7E621F43F46200DCB54E /* package-info.h */,
+				E6EB7E631F43F46200DCB54E /* package-info.m */,
+				E6EB7E641F43F46200DCB54E /* parser */,
+				E6EB7E831F43F46200DCB54E /* safety */,
+				E6EB7E8A1F43F46200DCB54E /* select */,
+				E6EB7E9F1F43F46200DCB54E /* SerializationException.h */,
+				E6EB7EA01F43F46200DCB54E /* SerializationException.m */,
+				E6EB7EA11F43F46200DCB54E /* UncheckedIOException.h */,
+				E6EB7EA21F43F46200DCB54E /* UncheckedIOException.m */,
+				E6EB7EA31F43F46200DCB54E /* UnsupportedMimeTypeException.h */,
+				E6EB7EA41F43F46200DCB54E /* UnsupportedMimeTypeException.m */,
+			);
+			path = jsoup;
+			sourceTree = "<group>";
+		};
+		E6EB7E241F43F46200DCB54E /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E251F43F46200DCB54E /* HtmlToPlainText.h */,
+				E6EB7E261F43F46200DCB54E /* HtmlToPlainText.m */,
+				E6EB7E271F43F46200DCB54E /* ListLinks.h */,
+				E6EB7E281F43F46200DCB54E /* ListLinks.m */,
+				E6EB7E291F43F46200DCB54E /* package-info.h */,
+				E6EB7E2A1F43F46200DCB54E /* package-info.m */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		E6EB7E2B1F43F46200DCB54E /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E2C1F43F46200DCB54E /* ChangeNotifyingArrayList.h */,
+				E6EB7E2D1F43F46200DCB54E /* ChangeNotifyingArrayList.m */,
+				E6EB7E2E1F43F46200DCB54E /* DataUtil.h */,
+				E6EB7E2F1F43F46200DCB54E /* DataUtil.m */,
+				E6EB7E301F43F46200DCB54E /* HttpConnection.h */,
+				E6EB7E311F43F46200DCB54E /* HttpConnection.m */,
+				E6EB7E321F43F46200DCB54E /* StringUtil.h */,
+				E6EB7E331F43F46200DCB54E /* StringUtil.m */,
+				E6EB7E341F43F46200DCB54E /* Validate.h */,
+				E6EB7E351F43F46200DCB54E /* Validate.m */,
+				E6EB7E361F43F46200DCB54E /* W3CDom.h */,
+				E6EB7E371F43F46200DCB54E /* W3CDom.m */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		E6EB7E3A1F43F46200DCB54E /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E3B1F43F46200DCB54E /* ConstrainableInputStream.h */,
+				E6EB7E3C1F43F46200DCB54E /* ConstrainableInputStream.m */,
+				E6EB7E3D1F43F46200DCB54E /* Normalizer.h */,
+				E6EB7E3E1F43F46200DCB54E /* Normalizer.m */,
+				E6EB7E3F1F43F46200DCB54E /* package-info.h */,
+				E6EB7E401F43F46200DCB54E /* package-info.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		E6EB7E431F43F46200DCB54E /* nodes */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E441F43F46200DCB54E /* Attribute.h */,
+				E6EB7E451F43F46200DCB54E /* Attribute.m */,
+				E6EB7E461F43F46200DCB54E /* Attributes.h */,
+				E6EB7E471F43F46200DCB54E /* Attributes.m */,
+				E6EB7E481F43F46200DCB54E /* BooleanAttribute.h */,
+				E6EB7E491F43F46200DCB54E /* BooleanAttribute.m */,
+				E6EB7E4A1F43F46200DCB54E /* Comment.h */,
+				E6EB7E4B1F43F46200DCB54E /* Comment.m */,
+				E6EB7E4C1F43F46200DCB54E /* DataNode.h */,
+				E6EB7E4D1F43F46200DCB54E /* DataNode.m */,
+				E6EB7E4E1F43F46200DCB54E /* Document.h */,
+				E6EB7E4F1F43F46200DCB54E /* Document.m */,
+				E6EB7E501F43F46200DCB54E /* DocumentType.h */,
+				E6EB7E511F43F46200DCB54E /* DocumentType.m */,
+				E6EB7E521F43F46200DCB54E /* Element.h */,
+				E6EB7E531F43F46200DCB54E /* Element.m */,
+				E6EB7E541F43F46200DCB54E /* Entities.h */,
+				E6EB7E551F43F46200DCB54E /* Entities.m */,
+				E6EB7E561F43F46200DCB54E /* FormElement.h */,
+				E6EB7E571F43F46200DCB54E /* FormElement.m */,
+				E6EB7E581F43F46200DCB54E /* LeafNode.h */,
+				E6EB7E591F43F46200DCB54E /* LeafNode.m */,
+				E6EB7E5A1F43F46200DCB54E /* Node.h */,
+				E6EB7E5B1F43F46200DCB54E /* Node.m */,
+				E6EB7E5C1F43F46200DCB54E /* package-info.h */,
+				E6EB7E5D1F43F46200DCB54E /* package-info.m */,
+				E6EB7E5E1F43F46200DCB54E /* TextNode.h */,
+				E6EB7E5F1F43F46200DCB54E /* TextNode.m */,
+				E6EB7E601F43F46200DCB54E /* XmlDeclaration.h */,
+				E6EB7E611F43F46200DCB54E /* XmlDeclaration.m */,
+			);
+			path = nodes;
+			sourceTree = "<group>";
+		};
+		E6EB7E641F43F46200DCB54E /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E651F43F46200DCB54E /* CharacterReader.h */,
+				E6EB7E661F43F46200DCB54E /* CharacterReader.m */,
+				E6EB7E671F43F46200DCB54E /* HtmlTreeBuilder.h */,
+				E6EB7E681F43F46200DCB54E /* HtmlTreeBuilder.m */,
+				E6EB7E691F43F46200DCB54E /* HtmlTreeBuilderState.h */,
+				E6EB7E6A1F43F46200DCB54E /* HtmlTreeBuilderState.m */,
+				E6EB7E6B1F43F46200DCB54E /* package-info.h */,
+				E6EB7E6C1F43F46200DCB54E /* package-info.m */,
+				E6EB7E6D1F43F46200DCB54E /* ParseError.h */,
+				E6EB7E6E1F43F46200DCB54E /* ParseError.m */,
+				E6EB7E6F1F43F46200DCB54E /* ParseErrorList.h */,
+				E6EB7E701F43F46200DCB54E /* ParseErrorList.m */,
+				E6EB7E711F43F46200DCB54E /* Parser.h */,
+				E6EB7E721F43F46200DCB54E /* Parser.m */,
+				E6EB7E731F43F46200DCB54E /* ParseSettings.h */,
+				E6EB7E741F43F46200DCB54E /* ParseSettings.m */,
+				E6EB7E751F43F46200DCB54E /* Tag.h */,
+				E6EB7E761F43F46200DCB54E /* Tag.m */,
+				E6EB7E771F43F46200DCB54E /* Token.h */,
+				E6EB7E781F43F46200DCB54E /* Token.m */,
+				E6EB7E791F43F46200DCB54E /* Tokeniser.h */,
+				E6EB7E7A1F43F46200DCB54E /* Tokeniser.m */,
+				E6EB7E7B1F43F46200DCB54E /* TokeniserState.h */,
+				E6EB7E7C1F43F46200DCB54E /* TokeniserState.m */,
+				E6EB7E7D1F43F46200DCB54E /* TokenQueue.h */,
+				E6EB7E7E1F43F46200DCB54E /* TokenQueue.m */,
+				E6EB7E7F1F43F46200DCB54E /* TreeBuilder.h */,
+				E6EB7E801F43F46200DCB54E /* TreeBuilder.m */,
+				E6EB7E811F43F46200DCB54E /* XmlTreeBuilder.h */,
+				E6EB7E821F43F46200DCB54E /* XmlTreeBuilder.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		E6EB7E831F43F46200DCB54E /* safety */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E841F43F46200DCB54E /* Cleaner.h */,
+				E6EB7E851F43F46200DCB54E /* Cleaner.m */,
+				E6EB7E861F43F46200DCB54E /* package-info.h */,
+				E6EB7E871F43F46200DCB54E /* package-info.m */,
+				E6EB7E881F43F46200DCB54E /* Whitelist.h */,
+				E6EB7E891F43F46200DCB54E /* Whitelist.m */,
+			);
+			path = safety;
+			sourceTree = "<group>";
+		};
+		E6EB7E8A1F43F46200DCB54E /* select */ = {
+			isa = PBXGroup;
+			children = (
+				E6EB7E8B1F43F46200DCB54E /* Collector.h */,
+				E6EB7E8C1F43F46200DCB54E /* Collector.m */,
+				E6EB7E8D1F43F46200DCB54E /* CombiningEvaluator.h */,
+				E6EB7E8E1F43F46200DCB54E /* CombiningEvaluator.m */,
+				E6EB7E8F1F43F46200DCB54E /* Elements.h */,
+				E6EB7E901F43F46200DCB54E /* Elements.m */,
+				E6EB7E911F43F46200DCB54E /* Evaluator.h */,
+				E6EB7E921F43F46200DCB54E /* Evaluator.m */,
+				E6EB7E931F43F46200DCB54E /* NodeTraversor.h */,
+				E6EB7E941F43F46200DCB54E /* NodeTraversor.m */,
+				E6EB7E951F43F46200DCB54E /* NodeVisitor.h */,
+				E6EB7E961F43F46200DCB54E /* NodeVisitor.m */,
+				E6EB7E971F43F46200DCB54E /* package-info.h */,
+				E6EB7E981F43F46200DCB54E /* package-info.m */,
+				E6EB7E991F43F46200DCB54E /* QueryParser.h */,
+				E6EB7E9A1F43F46200DCB54E /* QueryParser.m */,
+				E6EB7E9B1F43F46200DCB54E /* Selector.h */,
+				E6EB7E9C1F43F46200DCB54E /* Selector.m */,
+				E6EB7E9D1F43F46200DCB54E /* StructuralEvaluator.h */,
+				E6EB7E9E1F43F46200DCB54E /* StructuralEvaluator.m */,
+			);
+			path = select;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E6A8ACD81CFD147F0094C15F /* Utopia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6A8AD011CFD147F0094C15F /* Build configuration list for PBXNativeTarget "Utopia" */;
+			buildPhases = (
+				E6A8ACD51CFD147F0094C15F /* Sources */,
+				E6A8ACD61CFD147F0094C15F /* Frameworks */,
+				E6A8ACD71CFD147F0094C15F /* Resources */,
+				E6A8AD581CFD2F340094C15F /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Utopia;
+			productName = Utopia;
+			productReference = E6A8ACD91CFD147F0094C15F /* Utopia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E6A8ACEC1CFD147F0094C15F /* UtopiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6A8AD041CFD147F0094C15F /* Build configuration list for PBXNativeTarget "UtopiaTests" */;
+			buildPhases = (
+				E6A8ACE91CFD147F0094C15F /* Sources */,
+				E6A8ACEA1CFD147F0094C15F /* Frameworks */,
+				E6A8ACEB1CFD147F0094C15F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6A8ACEF1CFD147F0094C15F /* PBXTargetDependency */,
+			);
+			name = UtopiaTests;
+			productName = UtopiaTests;
+			productReference = E6A8ACED1CFD147F0094C15F /* UtopiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E6A8ACF71CFD147F0094C15F /* UtopiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E6A8AD071CFD147F0094C15F /* Build configuration list for PBXNativeTarget "UtopiaUITests" */;
+			buildPhases = (
+				E6A8ACF41CFD147F0094C15F /* Sources */,
+				E6A8ACF51CFD147F0094C15F /* Frameworks */,
+				E6A8ACF61CFD147F0094C15F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E6A8ACFA1CFD147F0094C15F /* PBXTargetDependency */,
+			);
+			name = UtopiaUITests;
+			productName = UtopiaUITests;
+			productReference = E6A8ACF81CFD147F0094C15F /* UtopiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E6A8ACD11CFD147F0094C15F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Joshua Green";
+				TargetAttributes = {
+					E6A8ACD81CFD147F0094C15F = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = V459ZAZ6BB;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					E6A8ACEC1CFD147F0094C15F = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = E6A8ACD81CFD147F0094C15F;
+					};
+					E6A8ACF71CFD147F0094C15F = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+						TestTargetID = E6A8ACD81CFD147F0094C15F;
+					};
+				};
+			};
+			buildConfigurationList = E6A8ACD41CFD147F0094C15F /* Build configuration list for PBXProject "Utopia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E6A8ACD01CFD147F0094C15F;
+			productRefGroup = E6A8ACDA1CFD147F0094C15F /* products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E6A8ACD81CFD147F0094C15F /* Utopia */,
+				E6A8ACEC1CFD147F0094C15F /* UtopiaTests */,
+				E6A8ACF71CFD147F0094C15F /* UtopiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E6A8ACD71CFD147F0094C15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E657D4291D49B91500710E02 /* upoopu_lib.js in Resources */,
+				E6638AFC1D28B5B400FF5444 /* ProvinceTagCell.xib in Resources */,
+				E6D8017C1D1F9D9200EF2223 /* DefaultPickerViewItem.xib in Resources */,
+				E6A8ACE41CFD147F0094C15F /* Assets.xcassets in Resources */,
+				E6E8DBD91D44881B002671BB /* DeployedArmyTableViewCell.xib in Resources */,
+				E6638AEF1D2761F200FF5444 /* ProvinceNewsCell.xib in Resources */,
+				E6D801A51D236A3C00EF2223 /* ChatroomMessageCell.xib in Resources */,
+				E6A8ACE21CFD147F0094C15F /* Main.storyboard in Resources */,
+				E60799951D629FB700C90CED /* CollectionViewCell.xib in Resources */,
+				E6638AE81D26D41500FF5444 /* LoadingDialog.xib in Resources */,
+				E670DE711D64E2A3006665EB /* KingdomProvinceCell.xib in Resources */,
+				E6D801811D207E9500EF2223 /* SpellTableViewCell.xib in Resources */,
+				E6D8018F1D208BCA00EF2223 /* TableViewCell.xib in Resources */,
+				E6AC3AB61D1AE2160066A438 /* Dialogs.storyboard in Resources */,
+				E6DDA5B61CFFE9D4009B1099 /* org in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8ACEB1CFD147F0094C15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8ACF61CFD147F0094C15F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E6A8AD581CFD2F340094C15F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -a ${DERIVED_FILES_DIR}/*.h ${BUILT_PRODUCTS_DIR}";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E6A8ACD51CFD147F0094C15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6EB7F2A1F43F46200DCB54E /* package-info.m in Sources */,
+				E6EB7ECA1F43F46200DCB54E /* MilitaryInProgressBundle.m in Sources */,
+				E6EB7F121F43F46200DCB54E /* HttpConnection.m in Sources */,
+				E6D801931D21FE2800EF2223 /* Building.swift in Sources */,
+				E6A02E181D5C10F80014F1B6 /* GenericIntelController.swift in Sources */,
+				E6EB7F411F43F46300DCB54E /* NodeTraversor.m in Sources */,
+				E6EB7EBD1F43F46200DCB54E /* DeployedArmyBundle.m in Sources */,
+				E6638AF51D28AB3A00FF5444 /* Kingdom.swift in Sources */,
+				E6EB7EF61F43F46200DCB54E /* NewsThieveryEvent.m in Sources */,
+				E6EB7F361F43F46200DCB54E /* TokeniserState.m in Sources */,
+				E6EB7EDD1F43F46200DCB54E /* ThroneBundle.m in Sources */,
+				E6EB7F091F43F46200DCB54E /* UtopiaCache.m in Sources */,
+				E6EB7EB11F43F46200DCB54E /* AvailableSpellsBundle.m in Sources */,
+				E6EB7F231F43F46200DCB54E /* Entities.m in Sources */,
+				E6AC3AB81D1B03500066A438 /* TrainUnitsDialog.swift in Sources */,
+				E6EB7F031F43F46200DCB54E /* Spell.m in Sources */,
+				E6EB7F061F43F46200DCB54E /* Base64Util.m in Sources */,
+				E6EB7F3F1F43F46300DCB54E /* Elements.m in Sources */,
+				E6D8018E1D208BCA00EF2223 /* TableViewCell.swift in Sources */,
+				E6EB7F1C1F43F46200DCB54E /* Attributes.m in Sources */,
+				E6EB7EC81F43F46200DCB54E /* KingdomProvinceBundle.m in Sources */,
+				E606498E1D052ACC005BC45B /* Province.swift in Sources */,
+				E6EB7EB41F43F46200DCB54E /* BuildCostBundle.m in Sources */,
+				E6EB7F3D1F43F46200DCB54E /* Collector.m in Sources */,
+				E6EB7F461F43F46300DCB54E /* StructuralEvaluator.m in Sources */,
+				E6EB7ED11F43F46200DCB54E /* ProvinceIdsBundle.m in Sources */,
+				E6DDA7731D035547009B1099 /* ThroneViewController.swift in Sources */,
+				E6EB7EBA1F43F46200DCB54E /* ChatMessageBundle.m in Sources */,
+				E6EB7F1F1F43F46200DCB54E /* DataNode.m in Sources */,
+				E6EB7ED81F43F46200DCB54E /* SpellBundle.m in Sources */,
+				E6EB7EDC1F43F46200DCB54E /* ThieveryOperationBundle.m in Sources */,
+				E6AC3AB11D1744D90066A438 /* UiTheme.swift in Sources */,
+				E6EB7EAF1F43F46200DCB54E /* AttackBundle.m in Sources */,
+				E657D4271D49B77500710E02 /* IosBase64Util.swift in Sources */,
+				E6EB7EC31F43F46200DCB54E /* ForumTopicsBundle.m in Sources */,
+				E6A8ACDF1CFD147F0094C15F /* LoginViewController.swift in Sources */,
+				E6EB7F3B1F43F46200DCB54E /* package-info.m in Sources */,
+				E6EB7F131F43F46200DCB54E /* StringUtil.m in Sources */,
+				E6EB7F0D1F43F46200DCB54E /* HtmlToPlainText.m in Sources */,
+				E6EB7F3C1F43F46200DCB54E /* Whitelist.m in Sources */,
+				E6D801A01D2365CE00EF2223 /* KingdomChatController.swift in Sources */,
+				E6EB7F001F43F46200DCB54E /* Scientist.m in Sources */,
+				E6EB7EBB1F43F46200DCB54E /* ChatroomBundle.m in Sources */,
+				E6EB7F011F43F46200DCB54E /* Session.m in Sources */,
+				E6EB7F0E1F43F46200DCB54E /* ListLinks.m in Sources */,
+				E6EB7EAE1F43F46200DCB54E /* ArmyOffenseBundle.m in Sources */,
+				E6EB7ED51F43F46200DCB54E /* ScienceResultBundle.m in Sources */,
+				E6AC3AB31D17476E0066A438 /* Race.swift in Sources */,
+				E6E8DBDB1D448ACA002671BB /* DeployedArmyTableViewCell.swift in Sources */,
+				E6EB7EF81F43F46200DCB54E /* HtmlParser.m in Sources */,
+				E6EB7EB81F43F46200DCB54E /* Bundle.m in Sources */,
+				E6EB7EC21F43F46200DCB54E /* ForumTopicPostsBundle.m in Sources */,
+				E6EB7F191F43F46200DCB54E /* package-info.m in Sources */,
+				E6EB7ECF1F43F46200DCB54E /* PrivateMessagesBundle.m in Sources */,
+				E6EB7EF01F43F46200DCB54E /* VerdeIntelUtil.m in Sources */,
+				E6EB7EE81F43F46200DCB54E /* Forum.m in Sources */,
+				E6EB7EDE1F43F46200DCB54E /* TradeSettingsBundle.m in Sources */,
+				E6A8ACDD1CFD147F0094C15F /* AppDelegate.swift in Sources */,
+				E6EB7F341F43F46200DCB54E /* Token.m in Sources */,
+				E6EB7EA81F43F46200DCB54E /* WebRequest.m in Sources */,
+				E657D2611D4711AE00710E02 /* UpoopuIntelSync.swift in Sources */,
+				E6EB7EE91F43F46200DCB54E /* HostilityMeter.m in Sources */,
+				E6A02E241D5C36CF0014F1B6 /* StingerIntelSync.swift in Sources */,
+				E6EB7EE21F43F46200DCB54E /* Database.m in Sources */,
+				E6638AF11D2764D800FF5444 /* ProvinceNewsCell.swift in Sources */,
+				E6EB7EE51F43F46200DCB54E /* UtopiaDatabaseV1.m in Sources */,
+				E6EB7F2F1F43F46200DCB54E /* ParseError.m in Sources */,
+				E6EB7F041F43F46200DCB54E /* ThieveryOperation.m in Sources */,
+				E6EB7F301F43F46200DCB54E /* ParseErrorList.m in Sources */,
+				E6EB7F3E1F43F46200DCB54E /* CombiningEvaluator.m in Sources */,
+				E6D8019E1D234C6F00EF2223 /* SpellResult.swift in Sources */,
+				E6EB7F141F43F46200DCB54E /* Validate.m in Sources */,
+				E6A1A6671D6A0742002DF8AD /* ReadOnlyThroneViewController.swift in Sources */,
+				E6EB7EAC1F43F46200DCB54E /* ActiveSpellBundle.m in Sources */,
+				E6638AEC1D275F1300FF5444 /* ProvinceNewsController.swift in Sources */,
+				E607998F1D62963A00C90CED /* KingdomController.swift in Sources */,
+				E6EB7F0F1F43F46200DCB54E /* package-info.m in Sources */,
+				E6D8017A1D1F9BE200EF2223 /* PickerViewAdapter.swift in Sources */,
+				E6EB7EE61F43F46200DCB54E /* DraftRate.m in Sources */,
+				E6625B7E1D4BC39C00EBD992 /* BuildVersion.swift in Sources */,
+				E6A02E221D5C35190014F1B6 /* UmunkIntelSync.swift in Sources */,
+				E657D4221D49B48B00710E02 /* IntelSyncFactory.swift in Sources */,
+				E6EB7EB61F43F46200DCB54E /* BuildingInProgressBundle.m in Sources */,
+				E6EB7F401F43F46300DCB54E /* Evaluator.m in Sources */,
+				E6EB7EF71F43F46200DCB54E /* NotificationMaker.m in Sources */,
+				E6EB7EFE1F43F46200DCB54E /* ProvinceTagUtil.m in Sources */,
+				E6EB7EF31F43F46200DCB54E /* NewsEvent.m in Sources */,
+				E6EB7EB91F43F46200DCB54E /* BundleFactory.m in Sources */,
+				E6EB7EA61F43F46200DCB54E /* Jsonable.m in Sources */,
+				E6EB7ECB1F43F46200DCB54E /* MilitarySettingsBundle.m in Sources */,
+				E6E8DBDD1D448CDD002671BB /* DeployedArmy.swift in Sources */,
+				E6EB7F291F43F46200DCB54E /* XmlDeclaration.m in Sources */,
+				E6EB7F311F43F46200DCB54E /* Parser.m in Sources */,
+				E6EB7F181F43F46200DCB54E /* Normalizer.m in Sources */,
+				E6EB7F321F43F46200DCB54E /* ParseSettings.m in Sources */,
+				E6638AEA1D26D4F300FF5444 /* LoadingDialog.swift in Sources */,
+				E6EB7F161F43F46200DCB54E /* HttpStatusException.m in Sources */,
+				E6EB7EF51F43F46200DCB54E /* NewsSpellEvent.m in Sources */,
+				E6EB7F1D1F43F46200DCB54E /* BooleanAttribute.m in Sources */,
+				E6638AFE1D28B63200FF5444 /* ProvinceTagCell.swift in Sources */,
+				E6EB7EBF1F43F46200DCB54E /* ExplorationCostsBundle.m in Sources */,
+				E6EB7ECE1F43F46200DCB54E /* PrivateMessageBundle.m in Sources */,
+				E6EB7ECD1F43F46200DCB54E /* NewspaperBundle.m in Sources */,
+				E6EB7EDB1F43F46200DCB54E /* StateHistoryBundle.m in Sources */,
+				E6EB7EEE1F43F46200DCB54E /* UmunkUtil.m in Sources */,
+				E6EB7F451F43F46300DCB54E /* Selector.m in Sources */,
+				E657D25F1D470DD500710E02 /* IntelSyncController.swift in Sources */,
+				E6EB7EB51F43F46200DCB54E /* BuildingBundle.m in Sources */,
+				E6EB7EF91F43F46200DCB54E /* JsoupHtmlParser.m in Sources */,
+				E6EB7EEF1F43F46200DCB54E /* UpoopuUtil.m in Sources */,
+				E6D801A21D23663300EF2223 /* ChatroomMessage.swift in Sources */,
+				E6EB7ED41F43F46200DCB54E /* ScienceBundle.m in Sources */,
+				E6EB7EFC1F43F46200DCB54E /* Province.m in Sources */,
+				E6EB7EC51F43F46200DCB54E /* InfiltrateThievesBundle.m in Sources */,
+				E6D211F11D25528000FC0E35 /* AutomaticApnsTokenRegistrar.swift in Sources */,
+				E6EB7EC61F43F46200DCB54E /* KingdomBundle.m in Sources */,
+				E606498C1D051398005BC45B /* ProvinceTabController.swift in Sources */,
+				E6D801831D2080F100EF2223 /* SpellTableViewCell.swift in Sources */,
+				E6D8017E1D1F9E1400EF2223 /* DefaultPickerViewItem.swift in Sources */,
+				E6EB7EED1F43F46200DCB54E /* StingerUtil.m in Sources */,
+				E6EB7F081F43F46200DCB54E /* JavaScriptExecutor.m in Sources */,
+				E6EB7F3A1F43F46200DCB54E /* Cleaner.m in Sources */,
+				E6EB7EE71F43F46200DCB54E /* Dragon.m in Sources */,
+				E6EB7EA91F43F46200DCB54E /* WebRequestSynchronizer.m in Sources */,
+				E6EB7EB71F43F46200DCB54E /* BuildingsBundle.m in Sources */,
+				E6EB7EA71F43F46200DCB54E /* Util.m in Sources */,
+				E6EB7EB31F43F46200DCB54E /* AvailableThieveryOperationsBundle.m in Sources */,
+				E6EB7EFF1F43F46200DCB54E /* Science.m in Sources */,
+				E6D801771D1F985700EF2223 /* DraftRateDialog.swift in Sources */,
+				E6EB7EEC1F43F46200DCB54E /* IntelSyncFactory.m in Sources */,
+				E6EB7EC11F43F46200DCB54E /* ForumTopicPostBundle.m in Sources */,
+				E6AC3AAD1D122C820066A438 /* Util.swift in Sources */,
+				E6EB7EC91F43F46200DCB54E /* MilitaryBundle.m in Sources */,
+				E6EB7F171F43F46200DCB54E /* ConstrainableInputStream.m in Sources */,
+				E6D801A71D236B1600EF2223 /* ChatroomMessageCell.swift in Sources */,
+				E63D85891D6CB09400581A4C /* SpellCellFactory.swift in Sources */,
+				E6638AF31D2767A400FF5444 /* ProvinceNews.swift in Sources */,
+				E6EB7EA51F43F46200DCB54E /* Json.m in Sources */,
+				E6EB7EDA1F43F46200DCB54E /* StateCouncilBundle.m in Sources */,
+				E6EB7ED91F43F46200DCB54E /* SpellResultBundle.m in Sources */,
+				E6EB7ED61F43F46200DCB54E /* ScientistBundle.m in Sources */,
+				E6D8019C1D22271400EF2223 /* CastSpellDialog.swift in Sources */,
+				E657D4201D49AF2C00710E02 /* IntelSyncType.swift in Sources */,
+				E64845421D57EE6F00C0371F /* VerdeIntelSync.swift in Sources */,
+				E6EB7EB21F43F46200DCB54E /* AvailableThieveryOperationBundle.m in Sources */,
+				E6A02E201D5C22D70014F1B6 /* StingerIntelController.swift in Sources */,
+				E657D4251D49B75000710E02 /* IosJavaScriptExecutor.swift in Sources */,
+				E6EB7EB01F43F46200DCB54E /* AttackDragonInfoBundle.m in Sources */,
+				E6EB7F431F43F46300DCB54E /* package-info.m in Sources */,
+				E6EB7F441F43F46300DCB54E /* QueryParser.m in Sources */,
+				E6EB7F481F43F46300DCB54E /* UncheckedIOException.m in Sources */,
+				E6EB7F421F43F46300DCB54E /* NodeVisitor.m in Sources */,
+				E60799931D629F6C00C90CED /* CollectionViewCell.swift in Sources */,
+				E6EB7EC01F43F46200DCB54E /* ForumTopicBundle.m in Sources */,
+				E6638AF71D28AD1100FF5444 /* UtopiaTagUtil.swift in Sources */,
+				E6EB7EBC1F43F46200DCB54E /* DeployedArmiesBundle.m in Sources */,
+				E6EB7F211F43F46200DCB54E /* DocumentType.m in Sources */,
+				E6DDA7711D035305009B1099 /* Session.swift in Sources */,
+				E63D85871D6CB06700581A4C /* CastableSpell.swift in Sources */,
+				E6D801731D1CCF0A00EF2223 /* TrainArmyData.swift in Sources */,
+				E6EB7F491F43F46300DCB54E /* UnsupportedMimeTypeException.m in Sources */,
+				E6EB7F201F43F46200DCB54E /* Document.m in Sources */,
+				E6EB7F271F43F46200DCB54E /* package-info.m in Sources */,
+				E6A1A6691D6AA949002DF8AD /* OffensiveSpellsController.swift in Sources */,
+				E6EB7F351F43F46200DCB54E /* Tokeniser.m in Sources */,
+				E6EB7F071F43F46200DCB54E /* BuildVersion.m in Sources */,
+				E6EB7EFD1F43F46200DCB54E /* ProvinceCredentials.m in Sources */,
+				E6D211F31D255B9200FC0E35 /* KingdomIdentifier.swift in Sources */,
+				E6EB7F2E1F43F46200DCB54E /* package-info.m in Sources */,
+				E6C1ED161D4C549900CA088D /* BadAccessType.swift in Sources */,
+				E6EB7F151F43F46200DCB54E /* W3CDom.m in Sources */,
+				E6DDA7691D0298EC009B1099 /* IosDatabase.swift in Sources */,
+				E6EB7EF11F43F46200DCB54E /* Kingdom.m in Sources */,
+				E6EB7EAA1F43F46200DCB54E /* ActiveSpell.m in Sources */,
+				E6EB7EAB1F43F46200DCB54E /* Building.m in Sources */,
+				E6EB7F1A1F43F46200DCB54E /* Jsoup.m in Sources */,
+				E6EB7EFA1F43F46200DCB54E /* UtopiaParser.m in Sources */,
+				E6EB7EE01F43F46200DCB54E /* ChatCredentials.m in Sources */,
+				E6DDA7791D046852009B1099 /* IosKeyValueStore.swift in Sources */,
+				E6EB7F1E1F43F46200DCB54E /* Comment.m in Sources */,
+				E6EB7EF41F43F46200DCB54E /* NewsMiscEvent.m in Sources */,
+				E6D211F51D26020300FC0E35 /* WebViewDelegate.swift in Sources */,
+				E6EB7EEB1F43F46200DCB54E /* IntelSync.m in Sources */,
+				E6EB7ED31F43F46200DCB54E /* ProvinceIntelBundle.m in Sources */,
+				E670DE731D64E2FC006665EB /* KingdomProvinceCell.swift in Sources */,
+				E6EB7EC71F43F46200DCB54E /* KingdomIntelBundle.m in Sources */,
+				E6A02E1C1D5C182B0014F1B6 /* VerdeIntelController.swift in Sources */,
+				E6638AF91D28AE4000FF5444 /* JavaUtil.swift in Sources */,
+				E6EB7ED21F43F46200DCB54E /* ProvinceIntelActiveSpellBundle.m in Sources */,
+				E6EB7ECC1F43F46200DCB54E /* NewsBundle.m in Sources */,
+				E6EB7ED01F43F46200DCB54E /* ProvinceIdBundle.m in Sources */,
+				E6EB7F2C1F43F46200DCB54E /* HtmlTreeBuilder.m in Sources */,
+				E6EB7EC41F43F46200DCB54E /* FundDragonInfoBundle.m in Sources */,
+				E6EB7F111F43F46200DCB54E /* DataUtil.m in Sources */,
+				E6D211EF1D24B6C500FC0E35 /* WebRequest.swift in Sources */,
+				E6EB7F1B1F43F46200DCB54E /* Attribute.m in Sources */,
+				E6D801911D2099DB00EF2223 /* Spell.swift in Sources */,
+				E6DDA7751D038586009B1099 /* NavigationController.swift in Sources */,
+				E6EB7F101F43F46200DCB54E /* ChangeNotifyingArrayList.m in Sources */,
+				E6BA9F5C1D6D273200284CD9 /* UtopiaUtil.swift in Sources */,
+				E6EB7F2B1F43F46200DCB54E /* CharacterReader.m in Sources */,
+				E6EB7F261F43F46200DCB54E /* Node.m in Sources */,
+				E6A02E1A1D5C12080014F1B6 /* UpoopuIntelController.swift in Sources */,
+				E6D801871D20845600EF2223 /* TableViewAdapter.swift in Sources */,
+				E6EB7F221F43F46200DCB54E /* Element.m in Sources */,
+				E6EB7F251F43F46200DCB54E /* LeafNode.m in Sources */,
+				E6DDA76B1D02A032009B1099 /* NotificationMaker.swift in Sources */,
+				E6EB7F281F43F46200DCB54E /* TextNode.m in Sources */,
+				E6EB7F2D1F43F46200DCB54E /* HtmlTreeBuilderState.m in Sources */,
+				E6EB7EE41F43F46200DCB54E /* UtopiaDatabase.m in Sources */,
+				E6EB7ED71F43F46200DCB54E /* SendAidBundle.m in Sources */,
+				E6A02E1E1D5C229E0014F1B6 /* UmunkIntelController.swift in Sources */,
+				E6EB7EE11F43F46200DCB54E /* Chatroom.m in Sources */,
+				E6D801851D20838300EF2223 /* DefensiveSpellsController.swift in Sources */,
+				E6EB7EDF1F43F46200DCB54E /* WarRoomBundle.m in Sources */,
+				E6DDA76D1D02A098009B1099 /* Vibrator.swift in Sources */,
+				E6EB7EF21F43F46200DCB54E /* NewsAttackEvent.m in Sources */,
+				E6EB7EEA1F43F46200DCB54E /* IntelSubmitter.m in Sources */,
+				E6EB7F0A1F43F46200DCB54E /* UtopiaUtil.m in Sources */,
+				E6EB7F471F43F46300DCB54E /* SerializationException.m in Sources */,
+				E6EB7EFB1F43F46200DCB54E /* PrivateMessage.m in Sources */,
+				E6AC3AAF1D123A0F0066A438 /* DraftRate.swift in Sources */,
+				E6D801751D1F14DE00EF2223 /* MilitaryWagesDialog.swift in Sources */,
+				E6EB7F381F43F46200DCB54E /* TreeBuilder.m in Sources */,
+				E6EB7F371F43F46200DCB54E /* TokenQueue.m in Sources */,
+				E6EB7F0C1F43F46200DCB54E /* Connection.m in Sources */,
+				E6EB7F391F43F46200DCB54E /* XmlTreeBuilder.m in Sources */,
+				E6EB7F021F43F46200DCB54E /* Settings.m in Sources */,
+				E6EB7EAD1F43F46200DCB54E /* ActiveSpellsBundle.m in Sources */,
+				E6EB7F051F43F46200DCB54E /* TrainArmyData.m in Sources */,
+				E65B675D1D261AE20061FCCB /* RefreshControl.swift in Sources */,
+				E60799911D629A4800C90CED /* CollectionAdapter.swift in Sources */,
+				E6EB7F0B1F43F46200DCB54E /* Vibrator.m in Sources */,
+				E6EB7EE31F43F46200DCB54E /* KeyValueStore.m in Sources */,
+				E6EB7F241F43F46200DCB54E /* FormElement.m in Sources */,
+				E6EB7EBE1F43F46200DCB54E /* DraftRateBundle.m in Sources */,
+				E6EB7F331F43F46200DCB54E /* Tag.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8ACE91CFD147F0094C15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A8ACF21CFD147F0094C15F /* UtopiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6A8ACF41CFD147F0094C15F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6A8ACFD1CFD147F0094C15F /* UtopiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E6A8ACEF1CFD147F0094C15F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6A8ACD81CFD147F0094C15F /* Utopia */;
+			targetProxy = E6A8ACEE1CFD147F0094C15F /* PBXContainerItemProxy */;
+		};
+		E6A8ACFA1CFD147F0094C15F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E6A8ACD81CFD147F0094C15F /* Utopia */;
+			targetProxy = E6A8ACF91CFD147F0094C15F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E6A8ACE01CFD147F0094C15F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E6A8ACE11CFD147F0094C15F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E6A8ACFF1CFD147F0094C15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E6A8AD001CFD147F0094C15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6A8AD021CFD147F0094C15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bin/j2objc/frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/bin/j2objc/include",
+					"${PROJECT_DIR}/Utopia/java",
+				);
+				INFOPLIST_FILE = Utopia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "${PROJECT_DIR}/bin/j2objc/lib";
+				OTHER_LDFLAGS = "-ljre_emul";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareverde.utopia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Utopia/Utopia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		E6A8AD031CFD147F0094C15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/bin/j2objc/frameworks",
+				);
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/bin/j2objc/include",
+					"${PROJECT_DIR}/Utopia/java",
+				);
+				INFOPLIST_FILE = Utopia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "${PROJECT_DIR}/bin/j2objc/lib";
+				OTHER_LDFLAGS = "-ljre_emul";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareverde.utopia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Utopia/Utopia-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+		E6A8AD051CFD147F0094C15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UtopiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareverde.UtopiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Utopia.app/Utopia";
+			};
+			name = Debug;
+		};
+		E6A8AD061CFD147F0094C15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UtopiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareverde.UtopiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Utopia.app/Utopia";
+			};
+			name = Release;
+		};
+		E6A8AD081CFD147F0094C15F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UtopiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareverde.UtopiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Utopia;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		E6A8AD091CFD147F0094C15F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UtopiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.softwareverde.UtopiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Utopia;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E6A8ACD41CFD147F0094C15F /* Build configuration list for PBXProject "Utopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A8ACFF1CFD147F0094C15F /* Debug */,
+				E6A8AD001CFD147F0094C15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6A8AD011CFD147F0094C15F /* Build configuration list for PBXNativeTarget "Utopia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A8AD021CFD147F0094C15F /* Debug */,
+				E6A8AD031CFD147F0094C15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6A8AD041CFD147F0094C15F /* Build configuration list for PBXNativeTarget "UtopiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A8AD051CFD147F0094C15F /* Debug */,
+				E6A8AD061CFD147F0094C15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E6A8AD071CFD147F0094C15F /* Build configuration list for PBXNativeTarget "UtopiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6A8AD081CFD147F0094C15F /* Debug */,
+				E6A8AD091CFD147F0094C15F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E6A8ACD11CFD147F0094C15F /* Project object */;
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DeployedArmyTableViewCell" customModule="Utopia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="X Generals Deployed" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNi-Nb-e1Y">
+                    <rect key="frame" x="8" y="4" width="170" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="zVw-1k-47A"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00h 00m" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bXg-J5-XYr">
+                    <rect key="frame" x="208.5" y="23" width="83.5" height="23"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="XXX Acres" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6i-Pe-WJh">
+                    <rect key="frame" x="219" y="4" width="73" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="TMt-9A-gfQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LWe-lB-Kg1">
+                    <rect key="frame" x="8" y="32" width="188" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="g35-dq-gZw"/>
+                    </constraints>
+                </progressView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="g6i-Pe-WJh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="6oK-6C-MYu"/>
+                <constraint firstAttribute="trailing" secondItem="bXg-J5-XYr" secondAttribute="trailing" constant="8" id="9gJ-7v-1pm"/>
+                <constraint firstAttribute="bottom" secondItem="LWe-lB-Kg1" secondAttribute="bottom" constant="8" id="DPR-RT-KMG"/>
+                <constraint firstAttribute="trailing" secondItem="g6i-Pe-WJh" secondAttribute="trailing" constant="8" id="Osr-Az-fXi"/>
+                <constraint firstItem="FNi-Nb-e1Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Rz9-nX-fBa"/>
+                <constraint firstAttribute="trailing" secondItem="LWe-lB-Kg1" secondAttribute="trailing" constant="104" id="VPb-6N-zJ2"/>
+                <constraint firstItem="LWe-lB-Kg1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="WAB-kb-Vvj"/>
+                <constraint firstItem="FNi-Nb-e1Y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="eWE-Mg-6Ed"/>
+                <constraint firstAttribute="bottom" secondItem="bXg-J5-XYr" secondAttribute="bottom" constant="4" id="uUw-rg-Sim"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_acresCapturedTextView" destination="g6i-Pe-WJh" id="gZd-dv-D49"/>
+                <outlet property="_generalsDeployedTextView" destination="FNi-Nb-e1Y" id="orZ-hD-X8B"/>
+                <outlet property="_progressBar" destination="LWe-lB-Kg1" id="eE9-rC-VEh"/>
+                <outlet property="_returnTimeTextView" destination="bXg-J5-XYr" id="N5V-nh-c4h"/>
+            </connections>
+            <point key="canvasLocation" x="397" y="722"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,110 @@
+#!/bin/bash
+
+script_root="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+make=${script_root}'/bin/j2objc/j2objc'
+utopia_android_dir=$(cd ${script_root}'/../../utopia-android/app/src/main/java' && pwd)
+
+tmp_dir=${script_root}'/tmp'
+tmp_java_dir=${tmp_dir}'/java'
+tmp_objc_dir=${tmp_dir}'/objc'
+tmp_resources_dir=${tmp_dir}'/resources'
+
+rm -rf "${tmp_dir}" 2>/dev/null
+
+mkdir -p "${tmp_dir}"
+mkdir -p "${tmp_java_dir}"
+mkdir -p "${tmp_objc_dir}"
+mkdir -p "${tmp_resources_dir}"
+
+function copy_java_files() {
+    package="$1"
+    files="$2"
+
+    android_src_dir="${utopia_android_dir}"
+
+    mkdir -p ${tmp_java_dir}/${package}
+
+    if [[ "${files}" == "*" ]]; then
+        cp ${android_src_dir}/${package}/*.java "${tmp_java_dir}/${package}/."
+    else
+        for file in ${files}; do
+            cp ${android_src_dir}/${package}/${file}.java "${tmp_java_dir}/${package}/."
+        done
+    fi
+}
+
+# org.jsoup
+jsoup_dir="${tmp_dir}/jsoup"
+mkdir -p "${jsoup_dir}"
+cd "${jsoup_dir}"
+git clone https://github.com/jhy/jsoup.git
+cd jsoup
+git checkout master
+cd ${script_dir}
+cp -R ${jsoup_dir}/jsoup/src/main/java/* "${tmp_java_dir}/."
+
+# copy org.jsoup resources
+cd ${jsoup_dir}/jsoup/src/main/java
+files=$(find . -iname 'entities-*.properties')
+for file in ${files}; do
+    resource_path=$(dirname ${file})
+    mkdir -p ${tmp_resources_dir}/${resource_path}
+    cp ${file} ${tmp_resources_dir}/${resource_path}/.
+done
+cd -
+
+# com.softwareverde.util
+package='com/softwareverde/util'
+files='Util Json Jsonable WebRequest WebRequestSynchronizer'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia.bundle
+package='com/softwareverde/utopia/bundle'
+files='*'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia.news
+package='com/softwareverde/utopia/news'
+files='*'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia
+package='com/softwareverde/utopia'
+files='Province Science Kingdom Dragon DraftRate Spell Building UtopiaUtil Settings ChatCredentials ThieveryOperation TrainArmyData Forum Chatroom PrivateMessage ProvinceTagUtil Session NotificationMaker Vibrator ProvinceCredentials Scientist ActiveSpell HostilityMeter UtopiaCache'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia.util
+package='com/softwareverde/utopia/util'
+files='Base64Util JavaScriptExecutor BuildVersion'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia.parser
+package='com/softwareverde/utopia/parser'
+files='UtopiaParser HtmlParser JsoupHtmlParser'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia.database
+package='com/softwareverde/utopia/database'
+files='Database UtopiaDatabase UtopiaDatabaseV1 KeyValueStore'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia.intelsync
+package='com/softwareverde/utopia/intelsync'
+files='IntelSync IntelSyncFactory IntelSubmitter UpoopuUtil VerdeIntelUtil UmunkUtil StingerUtil'
+copy_java_files "${package}" "${files}"
+
+
+cd "${tmp_objc_dir}"
+"$make" $(find ${tmp_java_dir} -iname '*.java')
+
+cd -
+
+rm -r "${script_root}/Utopia/java"
+mkdir -p "${script_root}/Utopia/java"
+cp -R ${tmp_objc_dir}/. "${script_root}/Utopia/java/."
+
+rm -r "${script_root}/Utopia/java-resources"
+mkdir -p "${script_root}/Utopia/java-resources"
+cp -R ${tmp_resources_dir}/* "${script_root}/Utopia/java-resources/."
+

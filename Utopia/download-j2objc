@@ -1,0 +1,23 @@
+#!/bin/bash
+
+script_root="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "${script_root}"
+
+mkdir -p bin
+cd bin
+
+version='1.3.1'
+url="https://github.com/google/j2objc/releases/download/${version}/j2objc-${version}.zip"
+
+if [ -d "j2objc" ]; then
+    echo "j2objc exists. Aborting."
+    exit 1
+fi
+
+wget "${url}"
+
+unzip "j2objc-${version}.zip"
+rm "j2objc-${version}.zip"
+
+mv j2objc-${version} j2objc
+

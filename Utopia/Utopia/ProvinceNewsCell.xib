@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProvinceNewsCell" customModule="Utopia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Month 00 of YR00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1M7-bk-b4L">
+                    <rect key="frame" x="177" y="4" width="119" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="bxE-7f-ixV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="m7P-bb-MBq">
+                    <rect key="frame" x="4" y="29" width="292" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="m7P-bb-MBq" secondAttribute="bottom" id="2Ff-43-RnB"/>
+                <constraint firstItem="m7P-bb-MBq" firstAttribute="top" secondItem="1M7-bk-b4L" secondAttribute="bottom" constant="4" id="HTO-2X-P21"/>
+                <constraint firstItem="m7P-bb-MBq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="4" id="b6W-ok-1kT"/>
+                <constraint firstAttribute="trailing" secondItem="m7P-bb-MBq" secondAttribute="trailing" constant="4" id="kiX-rn-iOY"/>
+                <constraint firstAttribute="trailing" secondItem="1M7-bk-b4L" secondAttribute="trailing" constant="4" id="pGb-R2-d8x"/>
+                <constraint firstItem="1M7-bk-b4L" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="uAE-Zg-8ej"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_dateTextView" destination="1M7-bk-b4L" id="jVW-ZV-jNS"/>
+                <outlet property="_newsTextView" destination="m7P-bb-MBq" id="PH1-Qo-y74"/>
+            </connections>
+            <point key="canvasLocation" x="453" y="702"/>
+        </view>
+    </objects>
+</document>
