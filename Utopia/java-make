@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+set -o xtrace
 
 script_root="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -9,13 +11,68 @@ tmp_dir=${script_root}'/tmp'
 tmp_java_dir=${tmp_dir}'/java'
 tmp_objc_dir=${tmp_dir}'/objc'
 tmp_resources_dir=${tmp_dir}'/resources'
+jar_cache_dir="${script_root}/.j2objc-cache"
 
 rm -rf "${tmp_dir}" 2>/dev/null
 
+mkdir -p "${jar_cache_dir}"
 mkdir -p "${tmp_dir}"
 mkdir -p "${tmp_java_dir}"
 mkdir -p "${tmp_objc_dir}"
 mkdir -p "${tmp_resources_dir}"
+
+function copy_maven_dependency() {
+    # https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-slf4j-impl/2.11.0/
+    package="$1"
+    name="$2"
+    version="$3"
+
+    jar_file="${name}-${version}-sources.jar"
+    download_url="https://repo1.maven.org/maven2/$(echo "${package}" | sed 's/\./\//g')/${name}/${version}/${jar_file}"
+
+    old_dir=`pwd`
+    mkdir -p tmp/jar
+    cd tmp/jar/
+    if [ ! -f "${jar_cache_dir}/${jar_file}" ]; then
+        cd "${jar_cache_dir}"
+        wget "${download_url}"
+        cd -
+    fi
+    mkdir -p unzip
+    mv "${jar_cache_dir}/${jar_file}" unzip/.
+    cd unzip
+    unzip "${jar_file}"
+    mv "${jar_file}" "${jar_cache_dir}/."
+    # rm -r org/bouncycastle/gpg/test 2>/dev/null # Remove test files...
+    find org -type d -iname 'test' | xargs rm -rf 2>/dev/null # Remove test files...
+    # rm -rf org/bouncycastle/x509 2>/dev/null
+    rm -f org/bouncycastle/x509/util/LDAPStoreHelper.java \
+        org/bouncycastle/jce/provider/X509LDAPCertStoreSpi.java \
+        org/bouncycastle/jce/provider/X509StoreLDAPCertPairs.java \
+        org/bouncycastle/jce/provider/X509StoreLDAPAttrCerts.java \
+        org/bouncycastle/jce/provider/X509StoreLDAPCRLs.java \
+        org/bouncycastle/jce/provider/X509StoreLDAPCerts.java \
+        2>/dev/null
+    cp -R org "${tmp_java_dir}/."
+    cd ..
+    rm -rf unzip
+    cd "${old_dir}"
+}
+
+function copy_softwareverde_dependency() {
+    package="$1"
+    project="$2"
+    version="$3"
+
+    dependency_dir="${tmp_dir}/${package}"
+    mkdir -p "${dependency_dir}"
+    cd "${dependency_dir}"
+    git clone https://github.com/softwareverde/${project}.git
+    cd "${project}"
+    git checkout "${version}" 2>/dev/null
+    cd ${script_dir}
+    cp -R ${dependency_dir}/${project}/src/main/java/* "${tmp_java_dir}/."
+}
 
 function copy_java_files() {
     package="$1"
@@ -40,7 +97,7 @@ mkdir -p "${jsoup_dir}"
 cd "${jsoup_dir}"
 git clone https://github.com/jhy/jsoup.git
 cd jsoup
-git checkout master
+git checkout a79d5e2 2>/dev/null
 cd ${script_dir}
 cp -R ${jsoup_dir}/jsoup/src/main/java/* "${tmp_java_dir}/."
 
@@ -54,9 +111,20 @@ for file in ${files}; do
 done
 cd -
 
+copy_maven_dependency 'org.slf4j' 'slf4j-api' '1.8.0-alpha2'
+
+copy_softwareverde_dependency "com.softwareverde.json" "json" "v1.0.5"
+copy_softwareverde_dependency "com.softwareverde.util" "java-util" "master"
+copy_softwareverde_dependency "com.softwareverde.logging" "java-logging" "master"
+
 # com.softwareverde.util
 package='com/softwareverde/util'
-files='Util Json Jsonable WebRequest WebRequestSynchronizer'
+files='WebRequest WebRequestSynchronizer'
+copy_java_files "${package}" "${files}"
+
+# com.softwareverde.utopia
+package='com/softwareverde/utopia'
+files='Util'
 copy_java_files "${package}" "${files}"
 
 # com.softwareverde.utopia.bundle
